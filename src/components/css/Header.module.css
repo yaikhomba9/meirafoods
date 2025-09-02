@@ -1,0 +1,1108 @@
+/* NavbarCommon.module.css */
+.globalFont {
+  font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
+}
+
+
+.globalFont b{
+
+  color: white !important;
+}
+
+.globalFont a{
+
+  text-decoration: none;
+
+}
+
+.logotext{
+
+  margin-left: 25px;
+}
+
+/* @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */
+
+.dropdownMenu.show {
+    animation: fadeIn 0.3s alternate;
+}
+
+.navbarToggler {
+    border: none;
+    padding: 0;
+    outline: none;
+}
+.navbarToggler:focus {
+    box-shadow: none;
+}
+.hamburgerToggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    margin-right: 10px;
+}
+.hamburger {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    pointer-events: none;
+}
+.hamburger span {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #333;
+    border-radius: 2px;
+    z-index: 1;
+    transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0), 
+                background 0.2s cubic-bezier(0.77,0.2,0.05,1.0), 
+                all 0.2s ease-in-out;
+    left: 0px;
+}
+.hamburger span:first-child {
+    top: 10%;
+    transform-origin: 50% 50%;
+    transform: translate(0% -50%) !important;
+}
+.hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.hamburger span:last-child {
+    left: 0px;
+    top: auto;
+    bottom: 10%;
+    transform-origin: 50% 50%;
+}
+.hamburger.active span {
+    position: absolute;
+    margin: 0;
+}
+.hamburger.active span:first-child {
+    top: 45%;
+    transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    left: 50%;
+    width: 0px;
+}
+.hamburger.active span:last-child {
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+.icons {
+  display: inline-flex;
+  margin-left: auto;
+}
+.icons a {
+  transition: all 0.2s ease-in-out;
+  padding: 0.2rem 0.4rem;
+  color: #ccc !important;
+  text-decoration: none;
+}
+.icons a:hover {
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+
+.profileSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.profilePopup.open {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 10000;
+}
+
+.profileBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.profileBtn i {
+  font-size: 1.5rem;
+}
+
+.profileBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.profilePopup {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.cardUser {
+  width: 250px;
+  --bs-card-border-color: #f8f9fa !important;
+  padding: 20px 0 0 0;
+}
+
+.textSm {
+  font-size: 10px !important;
+}
+
+.megaDropdownMenu {
+  position: relative;
+  backdrop-filter: blur(22px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 10000 !important;
+  max-width: 100%;
+}
+
+.dropdown .dropdownMenu {
+  position: relative;
+  backdrop-filter: blur(22px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  max-width: 100%;
+  --bs-dropdown-link-active-bg: #fffcfc4a !important;
+}
+
+.dropdownItem {
+  color: #615f5fed !important;
+  border-radius: 5px !important;
+  margin-bottom: 5px;
+  height: 60px !important;
+}
+
+.semiTransparentBlur {
+  position: relative;
+  background-color:#fffcfcb8 !important;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  color: white;
+}
+
+.megaDropdownContent ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+  font-size: 16px !important;
+  font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
+}
+
+.moduleIcon {
+  padding-right: 10px !important;
+}
+
+.megaInnerDiv {
+  padding: 10px !important;
+}
+
+.moduleIcon .svgInlineFfa {
+  height: 2em !important;
+}
+
+.megMenuItem h6 {
+  margin-bottom: 0rem !important;
+}
+
+.megMenuItem p {
+  margin-bottom: 0rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.modules {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  background-color: #e6e6e6;
+}
+
+.profileAvatar {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.profileAvatar i {
+  font-size: 3rem;
+  top:5px;
+}
+
+.profileInfo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileUsername {
+  font-weight: bold;
+}
+
+.profileEmail {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.profileActions {
+  display: flex;
+  justify-content: center;
+  padding: 10px !important;
+}
+
+.profileActionBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0 10px 0;
+  width: 70% !important;
+}
+
+.profileActionBtn:hover {
+  background-color: #0056b3;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.closeBtn:hover {
+  color: #007bff;
+}
+
+/* Mega Menu Improvements */
+.dropdownMega .dropdownMenu.megaDropdownMenu {
+  width: 100%;
+  padding: 0;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.megaMenuTitle {
+  color: #2c3e50;
+  font-weight: 600;
+  /* padding: 1rem 1rem 0; */
+  font-size: 1.1rem;
+  z-index: 10000 !important;
+}
+
+.moduleCard {
+  background: white;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.moduleCard:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 123, 255, 0.2);
+}
+
+.moduleIconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 8px;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.toolCard {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.toolCard:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.toolCard.comingSoon {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.toolCard.comingSoon:hover {
+  transform: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.toolIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.03);
+}
+
+.toolsFooter {
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+  .dropdownMega .dropdownMenu.megaDropdownMenu {
+    width: 90%;
+    left: 5% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dropdownMega .dropdownMenu.megaDropdownMenu {
+    width: 100%;
+    left: 0 !important;
+    position: static !important;
+  }
+  
+  .moduleCard {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .moduleCard {
+    padding: 0.75rem !important;
+  }
+  
+  .moduleIconContainer {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .toolCard {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdownMenu.show {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+
+.hdrrow{
+
+    width: 100% !important;
+    --bs-gutter-x : 0rem !important;
+}
+.ullink li{
+
+    cursor: pointer;
+    
+}
+.ullink{
+  gap:20px;
+}
+
+/* Small screens like mobile devices (up to 575px) */
+@media (min-width: 320px) and (max-width: 575px) {
+
+  .navbarSticky{
+
+    height: 70px !important;
+  }
+
+  .meirafoodLogo {
+    height: 50px;
+    width: 55px;
+    margin-left: 10px;
+  }
+
+   .navBarCol{
+
+      border-radius: 10px;
+      background: linear-gradient(to right, #484848ed 0%, #060606 100%);
+      padding: 2rem;
+    }
+
+    .globalFont b{
+      color: white !important;
+    }
+
+  .megaDropdownMenu{
+    position: relative !important;
+    width: 100%;
+  }
+
+  .dropdownItem .row .megMenuItem {
+    width: 80% !important;
+  }   
+
+  .modules .colSm12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .profilePopup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transform: none;
+  }
+
+  .profilePopup.open {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10000;
+  }
+
+}
+
+/* Small tablets and larger (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .navbarSticky{
+
+    height: 76px !important;
+  }
+
+  .navBarCol{
+
+      border-radius: 10px;
+      background: linear-gradient(to right, #484848ed 0%, #060606 100%);
+      padding: 2rem;
+    }
+
+    .globalFont b{
+      color: white !important;
+    }
+
+     .meirafoodLogo {
+          height: 55px;
+          width: 60px;
+          margin-left: 25px;
+        
+        }
+  .megaDropdownMenu{
+    position: relative !important;
+    width: 100%;
+  }
+
+  .navItem.dropdown.dropdownMega {
+    position: static;
+  }
+  .navItem.dropdown.dropdownMega .dropdownMenu {
+    top: auto;
+    left: 15%;
+  }
+
+  .modules .colSm12 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .profilePopup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transform: none;
+  }
+  .profilePopup.open {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10000;
+  }
+
+}
+
+/* Small laptops (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbarSticky{
+
+    height: 80px !important;
+    padding: 0;
+  }
+
+   .navbar-collapse.show {
+    display: none !important;
+  }
+    .navBarCol{
+
+      border-radius: 10px;
+      background: linear-gradient(to right, #484848ed 0%, #060606 100%);
+      padding: 2rem;
+    }
+
+    .globalFont b{
+      color: white !important;
+    }
+
+     .meirafoodLogo {
+        height: 70px;
+        width: 80px;
+        margin-left: 30px;
+
+        
+        }
+  .megaDropdownMenu{
+    position: fixed !important;
+    width: 60%;
+  }
+
+  .navItem.dropdown.dropdownMega {
+    position: static;
+  }
+  .navItem.dropdown.dropdownMega .dropdownMenu {
+    top: auto;
+    left: 15%;
+  }
+
+  .modules .colSm12 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .profilePopup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transform: none;
+  }
+
+  .profilePopup.open {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10000;
+  }
+
+  .cardUser {
+    width: 300px;
+    --bs-card-border-color: #f8f9fa !important;
+    padding: 20px 0 0 0;
+  }
+}
+
+
+/* Large desktops (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .navbarSticky{
+
+    height: 90px !important;
+    padding: 0;
+  }
+    .meirafoodLogo {
+       height: 70px;
+        width: 80px;
+        margin-left: 50px;
+        
+        }
+  .megaDropdownMenu{
+    position: fixed !important;
+    width: 60%;
+  }
+
+  .dropdownItem .row .moduleIcon {
+    width: 15% !important;
+  }  
+
+  .dropdownItem .row .megMenuItem {
+    width: 85% !important;
+  }
+
+  .modules .colLg4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .navItem.dropdown.dropdownMega {
+    position: static;
+  }
+  .navItem.dropdown.dropdownMega .dropdownMenu {
+    width: 85%;
+    top: auto;
+    left: 10%;
+  }
+
+  .profilePopup.open {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10000;
+  }
+
+  .navbar-collapse {
+    display: flex !important; /* For large screens */
+  }
+}
+
+/* Extra large desktops (1200px and up) */
+@media (min-width: 1200px) {
+
+  .navbarSticky{
+
+    height: 90px !important;
+    padding: 0;
+  }
+
+    .meirafoodLogo {
+          height: 60px;
+          width: 70px;
+          margin-left: 40px;
+        
+        }
+  .megaDropdownMenu{
+    position: fixed !important;
+    width: 60%;
+  }
+
+  .dropdownItem .row .moduleIcon {
+    width: 15% !important;
+  }  
+
+  .dropdownItem .row .megMenuItem {
+    width: 85% !important;
+  }
+
+  .modules .colLg4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .navItem.dropdown.dropdownMega {
+    position: static;
+  }
+  .navItem.dropdown.dropdownMega .dropdownMenu {
+    width: 60%;
+    top: auto;
+    left: 15%;
+    z-index: 100000;
+  }
+
+  .profilePopup.open {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10000;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .profileSection.collapsedProfileSection {
+    width: 100%;
+    order: 1;
+    justify-content: center;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .closeBtn {
+    top: -5px;
+    right: 5px;
+  }
+
+  .dropdownItem .row .moduleIcon {
+    width: 15% !important;
+  }  
+
+  .dropdownItem .row .megMenuItem {
+    width: 85% !important;
+  } 
+}
+
+
+
+
+
+/* NavbarCommon.module.css - Updated Card Styles */
+
+/* ... (keep all your existing styles above) ... */
+
+/* Module Cards */
+.moduleCard {
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.moduleCard:hover {
+  background: #f8f9fa;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+}
+
+.moduleIconContainer {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 86, 179, 0.1) 100%);
+  border-radius: 12px;
+  color: #007bff;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.moduleCard h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.moduleCard small {
+  font-size: 0.8rem;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* Tool Cards */
+.toolCard {
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  background: white;
+  height: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toolCard:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.toolCard.comingSoon {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #f8f9fa;
+}
+
+.toolCard.comingSoon:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.toolIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.05) 100%);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.toolCard h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+}
+
+.toolCard h6 .badge {
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.toolCard small {
+  font-size: 0.8rem;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* Card Layout Improvements */
+.megaDropdownMenu .row.g-3 {
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.megaDropdownMenu .row.g-3 > [class^="col-"] {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Modern Badge Style */
+.badge.bg-warning {
+  background-color: #ffc107 !important;
+  color: #212529;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Arrow Icon Animation */
+.toolCard:not(.comingSoon):hover .fa-arrow-right {
+  transform: translateX(3px);
+  transition: transform 0.2s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .moduleCard, .toolCard {
+    padding: 1rem;
+    min-height: 90px;
+  }
+  
+  .moduleIconContainer, .toolIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+  }
+  
+  .moduleCard h6, .toolCard h6 {
+    font-size: 0.9rem;
+  }
+  
+  .moduleCard small, .toolCard small {
+    font-size: 0.75rem;
+  }
+}
+
+/* Gradient Text Colors */
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+/* Card Content Alignment */
+.moduleCard .d-flex, .toolCard .d-flex {
+  align-items: center;
+}
+
+.toolCard .flex-grow-1 {
+  flex: 1;
+  min-width: 0; /* Prevent text overflow */
+}
+
+/* Dropdown Close Button Styles */
+.dropdownCloseBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.dropdownCloseBtn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #495057;
+  transform: rotate(90deg);
+}
+
+.dropdownCloseBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.megaDropdownMenu {
+  position: relative;
+  padding-top: 2.5rem !important; /* Add space for close button */
+}
+
+.megaMenuTitle {
+  padding-right: 2rem; /* Prevent title overlap with close button */
+}
+.dropdownMenu {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dropdownMenu:not(.show) {
+  display: block !important; /* Needed for animations */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+.closing {
+  animation: fadeOutUp 0.2s ease-out forwards;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+
+.navbarSticky{
+  
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height: 70px;
+  background-color: #E71D26 !important;
+}
+
+
+
+.nav-link.active {
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(77, 77, 84);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav-link.active:hover::after {
+  transform: scaleX(1);
+}
+
+/* If you want to keep the specific style for "Home" */
+.globalFont b {
+  position: relative;
+  color: rgb(135, 135, 135);
+}
+
+.globalFont b::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, #f5f3f2 0%, #eee5e5 100%);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.globalFont b:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-collapse {
+  display: none !important;
+}
+
+.navbar-collapse.show {
+  display: block !important;
+}

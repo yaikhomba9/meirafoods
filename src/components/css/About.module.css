@@ -1,0 +1,383 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(60px); /* start lower */
+  transition: all 0.8s ease-in-out;
+}
+
+.homeBackground {
+  
+}
+
+
+/* .hiddenLeft {
+  opacity: 0;
+  transform: translateX(-100px); 
+  transition: all 0.9s ease-out;
+} */
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(100px); /* slide in from right */
+  transition: all 0.9s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+.meirafoodLogo{
+
+    height: 600px;
+    width: 560px;
+    border-radius: 30px;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardDeck {
+  width: 250px;                 /* card width */
+  border-radius: 12px;          /* rounded corners */
+  overflow: hidden;             /* clip image edges */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* card shadow */
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardDeck:hover {
+  transform: translateY(-5px);   /* lift effect */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.storyTxt{
+
+    align-items: center;
+    border-radius: 10px;
+}
+
+.storyTxt h2{
+
+  font-weight: 800;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #f19b81dc;
+  margin-bottom: 1px;
+
+}
+.storyTxt h3{
+
+  font-weight: 500;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #edd0c7e4;
+  margin-top: -10px;
+  
+}
+
+/* .storyTxt h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+} */
+
+
+
+.aboutmain{
+
+    padding: 5rem;
+    visibility: visible;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+    background-color: #E71D26;
+   
+    }
+
+/* .aboutmain::before {
+  content: "";
+  position: absolute;
+  bottom: 1%; 
+  right: 0%;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle, rgba(211, 194, 151, 0.4), transparent 100%);
+  border-radius: 50%;
+  animation: blobMove 30s infinite linear;
+} */
+
+/*   @keyframes blobMove {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50%      { transform: rotate(180deg) scale(1.2); }
+}   */
+
+
+    .back{
+
+      background: url('../../../public/images/backImg.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+
+    
+
+
+.aboutmain p{
+
+  font-family: 'Montserrat', sans-serif;
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: justify;
+}
+
+
+.itemTitle b{
+
+
+     font-size: 10px !important;
+}
+
+.meirapropieter{
+
+    height: 230px;
+    width: 210px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.26),-3px -3px 5px hsla(0,0%,100%,.7);
+    
+ 
+
+}
+
+
+.abtPropiter{
+
+
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+
+
+
+
+/* .itemTitle b::after {
+
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(77, 77, 84);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+
+  }
+
+  .itemTitle hover::after {
+
+    transform: scaleX(1);
+
+  }
+ */
+
+
+
+ .rowpro{
+
+     padding: 2rem 1rem;
+ }
+
+
+
+ .propcard{
+
+  /* background-color: #f9ebe7; */
+  position: relative;
+  padding: 2rem;
+  border-radius: 12px;
+  --bs-card-bg:unset !important;
+
+  
+  border: unset !important;
+ }
+
+
+.propcard::before {
+  content: "";
+  position: absolute;
+  top: 10px;     /* move slightly inside */
+  left: 10px;
+  width: 60px;
+  height: 40px;
+  border-top: 3px solid #333;
+  border-left: 3px solid #333;
+  pointer-events: none; /* doesn’t block text clicks */
+}
+
+/* Bottom-right L shape inside */
+.propcard::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;   /* move slightly inside */
+  right: 10px;
+  width: 60px;
+  height: 40px;
+  border-bottom: 3px solid #333;
+  border-right: 3px solid #333;
+  pointer-events: none;
+}
+
+ .propContext{
+    position: relative;
+    overflow: hidden;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+
+
+ .itemTitle b::after {
+
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(77, 77, 84);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+
+  }
+
+  .itemTitle b:hover::after {
+
+    transform: scaleX(1);
+
+  }
+
+  .abthr{
+      height: 2px;
+      margin: 2px 5px 0 5px;
+      background: #E71D26;
+  }
+ 
+
+  .lineHidden {
+  width: 0;
+  height: 2px;
+  background: #F7F7F7;  /* line color */
+  transition: width 1s ease-out;
+  margin: 20px auto; /* center horizontally */
+}
+
+.lineVisible {
+  width: 80%; /* final width when visible */
+}
+
+.linesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10px; /* space between lines and image */
+}
+
+.line {
+  width: 3px;
+  height: 50px;  /* adjust length */
+  background-color: #333; /* line color */
+  margin: 5px 0; /* space between lines */
+  border-radius: 2px;
+}
+
+
+ @media (max-width: 375px){
+
+  .meirafoodLogo{
+
+    display: none !important;
+  }
+ } 
+
+ @media   (min-width: 357px) and (max-width: 575px) {
+
+
+  .propContext{
+
+    padding-top: 10px;
+  }
+
+  .meirafoodLogo{
+
+    display: block !important;
+    width: 100%;
+    height: 95%;
+
+  }
+
+   .storyTxt{
+    width: 100%;
+  }
+
+  .aboutmain{
+
+    padding: 1.5rem !important;
+  }
+
+ }
+
+ @media (min-width: 576px) and (max-width: 767px) {
+
+  .meirafoodLogo{
+
+    display: none !important;
+  }
+  .aboutmain{
+
+    width: 100%;
+    padding: 5rem 1rem;
+  }
+  .storyTxt{
+    width: 100%;
+  }
+
+ }
+
+ @media (min-width: 768px) and (max-width: 991px)  {
+
+  .meirafoodLogo{
+     width: 350px;
+     height: 350px;
+     display: flex !important;
+     justify-content: center;
+  }
+
+ }
+
+ @media (min-width: 992px) and (max-width: 1199px) {
+  .meirafoodLogo{
+
+    width: 300px;
+     height: 300px;
+    display: flex !important;
+    justify-content: end;
+  }
+
+ }
+
+ @media (min-width: 1200px){
+  
+ }

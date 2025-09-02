@@ -1,0 +1,143 @@
+.prdPadding{
+  overflow: hidden !important;
+  
+}
+
+.prddiv{
+
+  padding: 0rem 1rem 4rem 0rem !important;
+
+}
+
+
+.moduleCard {
+  background: white;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 7px 1px rgba(10, 9, 9, 0.15);
+ 
+}
+
+.moduleCard:hover{
+
+    transform: scale(1.02);
+}
+
+
+.meirafoodLogo{
+
+    height: 100%;
+    width : 100%;
+    border-radius: 10px;
+}
+
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 250px;
+}
+
+.meirafoodLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.loaderOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+
+@media   (min-width: 357px) and (max-width: 575px) {
+
+
+.imageWrapper {
+
+     height: 160px; 
+}
+  
+
+  .moduleCard {
+  background: white;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 7px 1px rgba(10, 9, 9, 0.15);
+  width: 100%;
+}
+
+.moduleCard:hover{
+
+   transform: unset !important;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+  .imageWrapper {
+  
+     height: 175px !important; 
+}
+
+.moduleCard:hover{
+
+    transform: unset !important;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+
+  .imageWrapper {
+  
+     height: 220px !important; 
+}
+
+
+.moduleCard:hover{
+
+    transform: unset !important;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .moduleCard{
+
+          background: white;
+          border-radius: 8px;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          height: 100%;
+          width: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 7px 1px rgba(10, 9, 9, 0.15);
+    
+  }
+
+  
+}
+
+@media (min-width: 1200px){
+   
+}

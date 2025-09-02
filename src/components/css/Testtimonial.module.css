@@ -1,0 +1,287 @@
+.testimonialImgDiv{
+
+   padding: 2rem;
+   border-color: red; 
+}
+
+
+.meirafoodLogo{
+
+    height: 200px;
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 0 2px 7px 1.5px rgba(10, 9, 9, 0.5);
+}
+
+.iconDiv{
+  color: red !important;
+}
+
+.homeHr{
+
+    margin-top: 20px !important;
+    height: 5px;
+    margin: 0 5px 0 5px;
+    background-color: red;
+}
+
+.testBodyDiv{
+
+    padding: 2rem;
+   /*  background-image: url('../../../public/images/background-pattern.png'); */
+   text-align: center;
+}
+
+
+.testBodyDiv{
+
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.testMainTitle{
+
+     margin-bottom: 70px; 
+
+}
+
+
+.conDiv{
+
+    border-radius: 10px;
+}
+
+
+.testBodyDiv .serviceMainTitle h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #9cdcf6 0%, #6792e8 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+
+h2{
+        text-transform: uppercase;
+        margin: 0 0 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 36px;
+}
+
+.serviceMainTitle h2{
+
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color :#E71D26;
+}
+
+
+
+.serviceIcon{
+  height: 50px;
+  width: 50px;
+  
+}
+
+.srvDiv{
+
+    padding: 2rem ;
+}
+
+
+.testimonial{
+
+  position: relative;
+  padding: 20px;
+  
+}
+
+.testImage{
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.2),-3px -3px 5px hsla(0,0%,100%,.7);
+  color: red;
+}
+
+.testImage img{
+
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  
+}
+
+
+.testContent{
+
+  position: relative;
+  overflow: hidden;
+
+}
+
+.testContent p{
+  margin-bottom: 0;
+  font-size: 17px;
+  font-style: italic;
+  text-align: left;
+}
+
+.testName{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  text-align: left;
+}
+
+
+.slideHidden {
+  opacity: 0;
+  transform: translateX(100px); /* shift right */
+  transition: all 0.8s ease-out;
+}
+
+/* When visible */
+.slideVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Add delays for each card */
+.slideVisible:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.slideVisible:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.slideVisible:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  
+
+}
+
+
+/* .testimonialSection {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonialSection h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: #f3faf6;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.quote {
+  font-size: 40px;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.testimonialText {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonialCard hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  color: #222;
+}
+
+.userDate {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .testimonialSection h2 {
+    font-size: 20px;
+  }
+
+  .testimonialText {
+    font-size: 14px;
+  }
+} */

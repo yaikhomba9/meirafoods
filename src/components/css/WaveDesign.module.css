@@ -1,0 +1,45 @@
+.waveWrapper1 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full page */
+  overflow: hidden;
+  background-color: #E71D26; /* fallback color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.waveBg1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wavea {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.waveb {
+  z-index: 1;
+}
+
+.wavec {
+  z-index: 2;
+}
+
+.waved {
+  z-index: 3;
+}
+
+.waveContent1 {
+  position: relative;
+  z-index: 10;
+  color: white; /* content text color */
+  text-align: center;
+  padding: 2rem;
+}
