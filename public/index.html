@@ -12,7 +12,7 @@
 
      <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
-      script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com;
+      script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com ;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com; 
       font-src 'self' https://fonts.gstatic.com;
@@ -20,7 +20,7 @@
       media-src 'self';
       frame-src https://www.google.com https://www.google.co.in https://maps.google.com;
       child-src https://www.google.com https://www.google.co.in https://maps.google.com;
-      connect-src 'self';
+      connect-src 'self' https://api.brevo.com/v3/smtp/email https://meirafoods-git-main-yaikhombas-projects.vercel.app  https://api.emailjs.com/api/v1.0/email/send;
     ">
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/meira_foods_logo.png" />

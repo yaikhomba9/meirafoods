@@ -11,6 +11,7 @@ const Footer = React.lazy(() => import('../components/Home/Footer'));
 const Teams = React.lazy(() => import('../components/Home/Teams'));
 const Contact = React.lazy(() => import('../components/Home/Contact'));
 const Awards = React.lazy(()=> import('../components/Home/Awards'));
+const FormContact = React.lazy(()=>import('../components/Home/ContactFrm'));
 
 
 const Home = ()=>{
@@ -23,6 +24,7 @@ const Home = ()=>{
              <Testimonial />
              <Awards />
              <Teams />
+             <FormContact />
              <Contact />
              <Footer />
 

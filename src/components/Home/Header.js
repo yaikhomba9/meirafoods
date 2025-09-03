@@ -96,6 +96,12 @@ const Header =()=>{
                     <p className={styles.globalFont}><a href='#testimonial'><b>Testimonial</b></a></p>
                     </span>
                     </li>
+                    <li className="nav-item">
+                    <span className="nav-link active " onClick={(e) => {handleRoute('/home');  toggleHamburgerMenu();}}>
+                                   <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meira_foods_logo.png`} alt="Meira Foods Logo" />
+
+                    </span>
+                    </li>
                      <li className="nav-item">
                     <span className="nav-link active " onClick={(e) => { handleRoute('/home'); toggleHamburgerMenu();}}>
                     <p className={styles.globalFont}><a href='#teams'><b>Team</b></a></p>

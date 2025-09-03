@@ -10,6 +10,9 @@ const Services =()=>{
       const sectionRef = useRef(null);
       const [inView, setInView] = useState(false); 
 
+
+
+
     const cards = [
     {
       id: 1,
@@ -17,7 +20,7 @@ const Services =()=>{
       text: "We provide consultation and guidance programs to support aspiring micropreneurs (foodpreneurs), helping them establish and grow their food businesses.",
       accent: "#92b283ab", // orange
       icon: (
-        <FontAwesomeIcon className={styles.serviceIcon} icon={faPeopleArrows}/>
+        <FontAwesomeIcon   className={styles.serviceIcon} icon={faPeopleArrows}/>
       )
     },
     {
