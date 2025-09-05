@@ -3,6 +3,11 @@
   font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
 }
 
+.navBarCol{
+
+  z-index: 3 !important;
+  margin-top: 2px;
+}
 
 .globalFont b{
 
@@ -18,6 +23,11 @@
 .logotext{
 
   margin-left: 25px;
+}
+
+.navbarSticky{
+
+  position: unset !important;
 }
 
 /* @keyframes fadeIn {
@@ -397,6 +407,19 @@
   font-size: 0.85rem;
 }
 
+.hdrItem{
+
+  padding: 1.5rem 0 0 0;
+}
+
+.hdrItemlogo{
+
+    padding:  0 0 0;
+
+}
+
+
+
 /* Responsive adjustments */
 @media (max-width: 1199.98px) {
   .dropdownMega .dropdownMenu.megaDropdownMenu {
@@ -460,10 +483,13 @@
 
 /* Small screens like mobile devices (up to 575px) */
 @media (min-width: 320px) and (max-width: 575px) {
-
+ .hdrItem{
+    padding: 0 !important;
+  }
   .navbarSticky{
 
     height: 70px !important;
+
   }
 
   .meirafoodLogo {
@@ -471,12 +497,15 @@
     width: 55px;
     margin-left: 10px;
   }
-
+.hdrItemlogo{
+  display: none;
+}
    .navBarCol{
 
       border-radius: 10px;
       background: linear-gradient(to right, #484848ed 0%, #060606 100%);
       padding: 2rem;
+      z-index: 2;
     }
 
     .globalFont b{
@@ -520,6 +549,9 @@
 
 /* Small tablets and larger (576px to 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
+ .hdrItem{
+    padding: 0 !important;
+  }
 
   .navbarSticky{
 
@@ -543,6 +575,10 @@
           margin-left: 25px;
         
         }
+
+        .hdrItemlogo{
+              display: none;
+           }
   .megaDropdownMenu{
     position: relative !important;
     width: 100%;
@@ -584,6 +620,11 @@
 /* Small laptops (768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+
+  .hdrItem{
+    padding: 0 !important;
+  }
+
   .navbarSticky{
 
     height: 80px !important;
@@ -591,7 +632,7 @@
   }
 
    .navbar-collapse.show {
-    display: none !important;
+    display: block !important;
   }
     .navBarCol{
 
@@ -608,9 +649,11 @@
         height: 70px;
         width: 80px;
         margin-left: 30px;
-
-        
         }
+
+        .hdrItemlogo{
+              display: none;
+           }
   .megaDropdownMenu{
     position: fixed !important;
     width: 60%;
@@ -667,9 +710,13 @@
     .meirafoodLogo {
        height: 70px;
         width: 80px;
-        margin-left: 50px;
         
         }
+
+        .hdrItemlogo{
+              display: flex;
+              justify-content: center;
+           }
   .megaDropdownMenu{
     position: fixed !important;
     width: 60%;
@@ -719,9 +766,8 @@
   }
 
     .meirafoodLogo {
-          height: 60px;
-          width: 70px;
-          margin-left: 40px;
+         height: 69px;
+          width: 79px;
         
         }
   .megaDropdownMenu{

@@ -1,0 +1,261 @@
+.LandingSectionDiv{
+
+
+    background-color: #e71d26;
+    display: flex;
+    padding-top: 50px;
+}
+
+.lndSecTxt{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fefafa;
+}
+
+.lndSecTxt h1{
+
+    text-transform: none !important;
+}
+
+.imgfluid1{
+    
+max-width: 90%;
+vertical-align: middle;
+
+}
+
+.imgfluid2{
+    
+max-width: 90%;
+vertical-align: middle;
+scale: 1.3;
+padding: 0;
+
+}
+.imgfluid3{
+    
+max-width: 90%;
+vertical-align: middle;
+
+}
+
+.imgfluid4{
+    display: none;
+}
+
+
+.imgTiltLeft {
+  /* transform: rotate(-10deg); */ /* tilt left */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  margin-right: -264px;
+}
+
+.imgTiltRight {
+  /* transform: rotate(10deg); */ /* tilt right */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  margin-left: -264px;
+}
+
+
+.custombtn {
+  font-weight: 600;
+  border-radius: 10px; /* Rounded pill style */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 5px;
+}
+
+.custombtn:hover {
+  background-color: #ffb703 !important; /* Slightly darker yellow */
+  color: #fff !important;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.custombtn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.imgDiv{
+
+    margin-top: 83px;
+    margin-bottom: 0;
+
+   }
+
+
+@media   (min-width: 357px) and (max-width: 575px) {
+
+.imgfluid1{
+max-width: 100%;
+vertical-align: middle;
+display: none;
+
+}
+
+.imgfluid2{
+    
+max-width: 100%;
+vertical-align: middle;
+scale: 1.3;
+display: none;
+
+}
+.imgfluid3{
+    
+max-width: 100%;
+vertical-align: middle;
+display: none;
+
+}
+
+.imgfluid4{
+    max-width: 90%;
+    vertical-align: middle;
+    display: block;
+}
+
+
+
+.imgDiv{
+
+    margin-top: 10px;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+.imgfluid1{
+    
+max-width: 100%;
+vertical-align: middle;
+width:fit-content;
+
+}
+
+.imgfluid2{
+    
+max-width: 100%;
+vertical-align: middle;
+scale: 1.3;
+
+}
+.imgfluid3{
+    
+max-width: 100%;
+vertical-align: middle;
+
+}
+
+     .imgTiltLeft {
+  /* transform: rotate(-10deg); */ /* tilt left */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+     margin-right: -170px;
+}
+
+.imgTiltRight {
+  /* transform: rotate(10deg); */ /* tilt right */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  margin-left: -175px;
+}
+
+
+.imgDiv{
+
+    margin-top: 50px;
+    height: 10vh;
+}
+
+}
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .imgfluid1{
+max-width: 100%;
+vertical-align: middle;
+
+}
+
+.imgfluid2{
+    
+max-width: 100%;
+vertical-align: middle;
+scale: 1.3;
+
+}
+.imgfluid3{
+    
+max-width: 100%;
+vertical-align: middle;
+
+}
+
+     .imgTiltLeft {
+  /* transform: rotate(-10deg); */ /* tilt left */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+     margin-right: -170px;
+}
+
+.imgTiltRight {
+  /* transform: rotate(10deg); */ /* tilt right */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  margin-left: -175px;
+}
+
+  }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .imgfluid1{
+    
+max-width: 100% !important;
+vertical-align: middle;
+
+}
+
+.imgfluid2{
+    
+max-width: 100%;
+vertical-align: middle;
+scale: 1.3;
+
+}
+.imgfluid3{
+    
+max-width: 100%;
+vertical-align: middle;
+
+}
+
+    .imgTiltLeft {
+  /* transform: rotate(-10deg); */ /* tilt left */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+     margin-right: -200px;
+}
+
+.imgTiltRight {
+  /* transform: rotate(10deg); */ /* tilt right */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  margin-left: -200px;
+}
+
+}
+
+@media (min-width: 1200px){ 
+
+
+     .imgTiltLeft {
+  /* transform: rotate(-10deg); */ /* tilt left */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+    margin-right: -345px;
+}
+
+.imgTiltRight {
+  /* transform: rotate(10deg); */ /* tilt right */
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+    margin-left: -354px;}
+
+}

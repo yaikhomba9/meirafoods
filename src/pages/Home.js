@@ -12,19 +12,23 @@ const Teams = React.lazy(() => import('../components/Home/Teams'));
 const Contact = React.lazy(() => import('../components/Home/Contact'));
 const Awards = React.lazy(()=> import('../components/Home/Awards'));
 const FormContact = React.lazy(()=>import('../components/Home/ContactFrm'));
+const LandingSection = React.lazy(()=>import('../components/Home/LandingSection'));
+const TrendProdCSlider =React.lazy(()=>import('../components/Home/TrendProdSlider'));
 
 
 const Home = ()=>{
 
     return(
         <>
-             <ImageSlider />
+             {/* <ImageSlider /> */}
+              <LandingSection /> 
+             <TrendProdCSlider />
              <About />
              <Services />
              <Testimonial />
              <Awards />
              <Teams />
-             <FormContact />
+            {/*  <FormContact /> */}
              <Contact />
              <Footer />
 
