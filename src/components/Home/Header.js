@@ -59,9 +59,9 @@ const Header =()=>{
          <nav className={`navbar navbar-expand-lg navbar-light bg-light shadow ${styles.navbarSticky} `}>
            <div className="container-fluid">
           
-           {/*  <a className="navbar-brand" href="#" onClick={(e) => {e.preventDefault(); handleRoute('home'); toggleDropdown()}}>
+             <a className={`navbar-brand ${styles.navbar}`}  onClick={(e) => {e.preventDefault(); handleRoute('home'); toggleDropdown()}}>
                <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meira_foods_logo.png`} alt="Meira Foods Logo" />
-            </a> */}
+            </a> 
             <button
             className={`navbar-toggler collapsed ${styles.hamburgerToggle} ${isHamburgerActive ? 'active' : ''}`}
             type="button"

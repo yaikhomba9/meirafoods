@@ -2,6 +2,10 @@
 .globalFont {
   font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
 }
+.navbar{
+
+  display: none !important;
+}
 
 .navBarCol{
 
@@ -483,6 +487,11 @@
 
 /* Small screens like mobile devices (up to 575px) */
 @media (min-width: 320px) and (max-width: 575px) {
+
+  .navbar{
+
+  display: block !important;
+}
  .hdrItem{
     padding: 0 !important;
   }
@@ -549,6 +558,10 @@
 
 /* Small tablets and larger (576px to 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
+    .navbar{
+
+  display: block !important;
+}
  .hdrItem{
     padding: 0 !important;
   }
@@ -620,6 +633,10 @@
 /* Small laptops (768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .navbar{
+
+  display: block !important;
+}
 
   .hdrItem{
     padding: 0 !important;

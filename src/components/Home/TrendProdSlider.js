@@ -54,7 +54,7 @@ const TrendProdCSlider=()=>{
     {
       id: 6,
       img: `${process.env.PUBLIC_URL}/images/kiwi_img.png`,
-      title: "Pineapple Cookies",
+      title: "Kiwi Jam",
       text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
       updated: "Last updated 20 mins ago",
       route: "/product/jam" ,  

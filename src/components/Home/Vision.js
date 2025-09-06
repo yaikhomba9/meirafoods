@@ -1,15 +1,75 @@
 import React from 'react';
 import styles from '../css/Vsion.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faBriefcase, faChalkboardTeacher, faHandHolding, faHandsHolding, faIndustry, faPeopleArrows, faPersonChalkboard, faUsersRectangle, faBullseye, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 
 const Vision=()=>{
 
      return(
 
-        <>
-          <div id="vision" className={styles.visionDiv}>
+      <>
+        <div id="vision" className={styles.visionDiv}>
+        <h2 class="text-center fw-bold mb-4">Mission, Vision & Values</h2>
+          <section className={`py-4 bg-white ${styles.visonSec}`} >
+                <div className="container">
+                  <div className="row text-center">
+                    {/* Mission */}
+                    <div className="col-12 col-md-4 mb-4 border-md-end"  style={{ borderRight: "2px solid #ddd" }}>
+                      <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={faBullseye} />
+                      <div className='d-flex justify-content-center'>
+                           <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
+                            OUR MISSION
+                          </h4>
+                      </div>
+                      <div className="my-2" style={{ width: "40px", height: "2px", background: "#000", margin: "10px auto" }}></div>
+                      <p className="text-muted  ${styles.visionTxt}">
+                        To preserve and promote the natural tastes of indigenous food. <br />
+                        To provide training in food processing technologies. <br />
+                        To create work opportunities for the youths. <br />
+                        To support entrepreneurs in creating a sustainable business model.
+                      </p>
+                    </div>
 
-          <div class="container my-5">
+                    {/* Vision */}
+                    <div className="col-12 col-md-4 mb-4 border-md-end"  style={{ borderRight: "2px solid #ddd" }}>
+                      <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={faEye} />
+                      <div className='d-flex justify-content-center'>
+                          <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
+                            OUR VISION
+                          </h4>
+                      </div>
+                    
+                      <div className="my-2" style={{ width: "40px", height: "2px", background: "#000", margin: "10px auto" }}></div>
+                      <p className="text-muted  ${styles.visionTxt}">
+                        To empower the community and create a sustainable, healthy ecosystem.
+                      </p>
+                    </div>
+
+                    {/* Values */}
+                    <div className="col-12 col-md-4 mb-4">
+                      <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={faHeart} />
+                      <div className='d-flex justify-content-center'>
+                          <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
+                            OUR VALUES
+                          </h4>
+                      </div>
+                      <div className="my-2" style={{ width: "40px", height: "2px", background: "#000", margin: "10px auto" }}></div>
+                      <p className={`text-muted  ${styles.visionTxt}`}>
+                        Purpose Driven <br />
+                        Nurturing <br />
+                        Empathetic <br />
+                        Collaborative <br />
+                        Shared Success
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+          {/* <div class="container my-5">
                 <h2 class="text-center fw-bold mb-4">Mission, Vision & Values</h2>
 
                 <div class="row g-4">
@@ -102,7 +162,7 @@ const Vision=()=>{
                     </div>
                     </div>
                 </div>
-                </div>
+                </div> */}
 
 {/* <div class="container my-5">
   <h2 class="text-center fw-bold mb-4">Our Mission, Vision & Values</h2>

@@ -16,3 +16,28 @@
 
     --bs-card-border-color : white !important;
 }
+
+
+.visonSec{
+
+     box-shadow: 0 2px 7px 1.9px rgba(13, 11, 11, 0.39);
+     border-radius: 15px;
+
+}
+
+.visonhdr{
+
+    border-radius: 10px;
+    background-color: #ffd865 !important;
+}
+
+.visionTxt{
+
+    font-weight: 400;
+}
+
+.visonLogo{
+
+    color: #dc3545 !important;
+}
+   
