@@ -26,10 +26,10 @@ const LandingSection =()=>{
         {/* <p className="lead mt-3">
           Because great coffee is the start of something even greater.
         </p> */}
-        <div className="mt-4">
+{/*         <div className="mt-4">
           <Button variant="warning" onClick={(e) => {handleRoute('/product')}} className={`me-3 px-4 py-2 ${style.custombtn}`}>Explore our Products</Button>
           <a href='#contact'><Button variant="outline-light" className="px-4 py-2">Our Locations</Button></a>
-        </div>
+        </div> */}
           
 
         <div className={`row justify-content-center ${style.imgDiv}`}>

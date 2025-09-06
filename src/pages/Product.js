@@ -1,5 +1,5 @@
-import React,{useState} from 'react';
-import { NavLink } from 'react-router-dom';
+import React,{useState, useEffect} from 'react';
+import { NavLink, useParams } from 'react-router-dom';
 import styles from '../pages/css/Product.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTimesSquare , faUserCircle} from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +16,7 @@ const Candy = React.lazy(()=> import('../components/Product/Candy')); */
 
 const Product =()=>{
 
+        const { category } = useParams(); // 👈 get param from URL
         const [showNav, setShowNav] = useState(false);
         const [activeSection, setActiveSection] = useState('all');
 
@@ -71,6 +72,15 @@ const Product =()=>{
       content: 'Get in touch with our team. We would love to hear from you and answer any questions you may have.'
     } */
   };
+
+
+  useEffect(() => {
+    if (category && sections[category]) {
+      setActiveSection(category);
+    } else {
+      setActiveSection('all'); // fallback
+    }
+  }, [category]);
 
 
     return(

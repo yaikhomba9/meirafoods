@@ -1,0 +1,18 @@
+.visionDiv{
+
+
+    background-color: #F7F7F7;
+    padding: 4rem;
+}
+
+.hdtxt{
+
+    background-color: red;
+    padding: 0.5rem;
+    color: #F7F7F7;
+}
+
+.card{
+
+    --bs-card-border-color : white !important;
+}

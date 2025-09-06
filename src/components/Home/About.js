@@ -114,7 +114,7 @@ const About =()=>{
 
                </div>
                <div className={`col-lg-6 col-md-12 col-sm-10 col-xs-12 d-flex justify-content-center ${styles.hiddenRight}`}>
-                    <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/about_img.jpeg`} alt="Meira Foods Logo" />
+                    <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/about_img.png`} alt="Meira Foods Logo" />
                </div>
                
                 

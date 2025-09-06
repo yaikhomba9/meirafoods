@@ -1,0 +1,221 @@
+import React from 'react';
+import styles from '../css/Vsion.module.css';
+
+
+const Vision=()=>{
+
+     return(
+
+        <>
+          <div id="vision" className={styles.visionDiv}>
+
+          <div class="container my-5">
+                <h2 class="text-center fw-bold mb-4">Mission, Vision & Values</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-4 col-sm-12">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                        <h4 class="card-title text-primary fw-bold">Mission</h4>
+                        <p class="card-text">Preserving and promoting indigenous tastes...</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#missionModal">
+                            Read More
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                        <h4 class="card-title text-success fw-bold">Vision</h4>
+                        <p class="card-text">Empower the community for sustainability...</p>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#visionModal">
+                            Read More
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                        <h4 class="card-title text-warning fw-bold">Values</h4>
+                        <p class="card-text">Purpose-driven, nurturing, empathetic...</p>
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#valuesModal">
+                            Read More
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="modal fade" id="missionModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary">Mission</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                        <li>Preserve and promote the natural tastes of indigenous food.</li>
+                        <li>Provide training in food processing technologies.</li>
+                        <li>Create work opportunities for the youths.</li>
+                        <li>Support entrepreneurs in creating a sustainable business model.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="modal fade" id="visionModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-success">Vision</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Empower the community and create a sustainable, healthy ecosystem.
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="modal fade" id="valuesModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-warning">Values</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                        <li>Purpose Driven</li>
+                        <li>Nurturing</li>
+                        <li>Empathetic</li>
+                        <li>Collaborative</li>
+                        <li>Shared Success</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+{/* <div class="container my-5">
+  <h2 class="text-center fw-bold mb-4">Our Mission, Vision & Values</h2>
+
+  <div class="accordion" id="missionVisionValues">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMission">
+        <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMission" aria-expanded="true" aria-controls="collapseMission">
+          Mission
+        </button>
+      </h2>
+      <div id="collapseMission" class="accordion-collapse collapse show" aria-labelledby="headingMission" data-bs-parent="#missionVisionValues">
+        <div class="accordion-body">
+          <ul class="mb-0">
+            <li>Preserve and promote the natural tastes of indigenous food.</li>
+            <li>Provide training in food processing technologies.</li>
+            <li>Create work opportunities for the youths.</li>
+            <li>Support entrepreneurs in creating a sustainable business model.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingVision">
+        <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVision" aria-expanded="false" aria-controls="collapseVision">
+          Vision
+        </button>
+      </h2>
+      <div id="collapseVision" class="accordion-collapse collapse" aria-labelledby="headingVision" data-bs-parent="#missionVisionValues">
+        <div class="accordion-body">
+          Empower the community and create a sustainable, healthy ecosystem.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingValues">
+        <button class="accordion-button collapsed fw-bold text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseValues" aria-expanded="false" aria-controls="collapseValues">
+          Values
+        </button>
+      </h2>
+      <div id="collapseValues" class="accordion-collapse collapse" aria-labelledby="headingValues" data-bs-parent="#missionVisionValues">
+        <div class="accordion-body">
+          <ul class="mb-0">
+            <li>Purpose Driven</li>
+            <li>Nurturing</li>
+            <li>Empathetic</li>
+            <li>Collaborative</li>
+            <li>Shared Success</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> */}
+
+
+              {/* <section className="py-5 ">
+                <div class="container my-5">
+                    <h2 class="text-center fw-bold mb-4">Our Mission, <b className={styles.hdtxt}>Vision & Values</b></h2>
+                    <p class="text-center text-muted mb-5">
+                        Preserving traditions, empowering communities, and building a sustainable future.
+                    </p>
+
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                            <h4 class="card-title text-primary fw-bold">Mission</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li>• Preserve and promote the natural tastes of indigenous food.</li>
+                                <li>• Provide training in food processing technologies.</li>
+                                <li>• Create work opportunities for the youths.</li>
+                                <li>• Support entrepreneurs in creating a sustainable business model.</li>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                            <h4 class="card-title text-success fw-bold">Vision</h4>
+                            <p class="mt-3">
+                                Empower the community and create a sustainable, healthy ecosystem.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                            <h4 class="card-title text-warning fw-bold">Values</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li>• Purpose Driven</li>
+                                <li>• Nurturing</li>
+                                <li>• Empathetic</li>
+                                <li>• Collaborative</li>
+                                <li>• Shared Success</li>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+               </section> */}
+
+          </div>        
+        </>
+     );
+
+}
+export default Vision;

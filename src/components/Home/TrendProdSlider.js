@@ -1,21 +1,29 @@
 import React from 'react';
 import styles from '../css/TrendProdSlider.module.css'
 import { Carousel } from "react-bootstrap";
-
+import { useNavigate } from 'react-router-dom';
 
 
 const TrendProdCSlider=()=>{
 
 
+
+   const handleRoute = (route) => {
+      navigate(route);
+    };
+  
+     const navigate = useNavigate();
+
+
    const cardData = [
     {
-      id: 1,
+      id: 'product',
       img: `${process.env.PUBLIC_URL}/images/imgland1.png`,
       title: "Fish (Rohu/Rou) Pickle",
       text: "Tender rohu in aromatic ginger-garlic pickle—balanced heat, big flavour, ready to serve with meals or snacks.",
-      updated: "Last updated 3 mins ago",
+      route: "/product/pickle", 
     },
-    {
+   /*  {
       id: 2,
       img: `${process.env.PUBLIC_URL}/images/imgland2.png`,
       title: "King Chilli (Umorok) Pickle",
@@ -35,6 +43,28 @@ const TrendProdCSlider=()=>{
       title: "Pineapple Cookies",
       text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
       updated: "Last updated 20 mins ago",
+    }, */
+    {
+      id: 5,
+      img: `${process.env.PUBLIC_URL}/images/candyImg.png`,
+      title: "Tamarind Candy",
+      text: "Sweet-sour tamarind candy—classic Indian flavour you’ll keep reaching for.",
+       route: "/product/candy",  
+    },
+    {
+      id: 6,
+      img: `${process.env.PUBLIC_URL}/images/kiwi_img.png`,
+      title: "Pineapple Cookies",
+      text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
+      updated: "Last updated 20 mins ago",
+      route: "/product/jam" ,  
+    },
+    {
+      id: 7,
+      img: `${process.env.PUBLIC_URL}/images/Pinapple_cookies.png`,
+      title: "Pineapple Cookies",
+      text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
+      route: "/product/all" ,  
     },
   ];
 
@@ -50,6 +80,7 @@ const TrendProdCSlider=()=>{
         key={card.id + Math.random()} // avoid duplicate keys
         className={`card mb-3 mx-2 ${styles.carddiv1}`}
         style={{ maxWidth: "400px", minWidth: "400px" }}
+         onClick={() => handleRoute(card.route)} 
       >
         <div className="row g-0">
           <div className="col-12 col-md-4 ">
