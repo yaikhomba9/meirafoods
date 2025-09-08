@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../css/Vsion.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faBriefcase, faChalkboardTeacher, faHandHolding, faHandsHolding, faIndustry, faPeopleArrows, faPersonChalkboard, faUsersRectangle, faBullseye, faHeart} from '@fortawesome/free-solid-svg-icons';
+import { faEye, faBriefcase, faChalkboardTeacher, faHandHolding, faHandsHolding, faIndustry, faPeopleArrows, faPersonChalkboard, faUsersRectangle, faBullseye} from '@fortawesome/free-solid-svg-icons';
+import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
 
 
 const Vision=()=>{
@@ -48,7 +49,7 @@ const Vision=()=>{
 
                     {/* Values */}
                     <div className="col-12 col-md-4 mb-4">
-                      <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={faHeart} />
+                      <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={farHeart} />
                       <div className='d-flex justify-content-center'>
                           <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
                             OUR VALUES
