@@ -34,6 +34,7 @@
 .visionTxt{
 
     font-weight: 400;
+    
 }
 
 .visonLogo{
@@ -41,3 +42,23 @@
     color: #dc3545 !important;
 }
    
+
+.visioneffct {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.active {
+  animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

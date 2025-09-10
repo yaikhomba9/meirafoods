@@ -15,6 +15,7 @@ const FormContact = React.lazy(()=>import('../components/Home/ContactFrm'));
 const LandingSection = React.lazy(()=>import('../components/Home/LandingSection'));
 const TrendProdCSlider =React.lazy(()=>import('../components/Home/TrendProdSlider'));
 const Vision = React.lazy(()=>import('../components/Home/Vision'));
+const Galery= React.lazy(()=> import('../components/Home/Galery'));
 
 
 const Home = ()=>{
@@ -31,6 +32,7 @@ const Home = ()=>{
              <Awards />
              <Teams />
             {/*  <FormContact /> */}
+             <Galery />
              <Contact />
              <Footer />
 

@@ -12,9 +12,13 @@
 }
 
 
-.carddiv1{
+.carddiv1 {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
 
-box-shadow: 0px 4px 6px rgba(6, 6, 6, 0.3);
+.carddiv1:hover {
+  transform: scale(1.05);  /* Slight pop-out */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);  /* Softer shadow */
 }
 
 
@@ -30,11 +34,16 @@ box-shadow: 0px 4px 6px rgba(6, 6, 6, 0.3);
 .scrollWrapper {
   overflow: hidden;
   width: 100%;
+  padding: 1rem;
 }
 
 .scrollContent {
   display: flex;
   animation: scroll-left 15s linear infinite;
+}
+
+.scrollContent:hover {
+  animation-play-state: paused; /* Pause on hover */
 }
 
 @keyframes scroll-left {

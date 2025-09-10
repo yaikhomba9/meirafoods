@@ -304,6 +304,17 @@
    height: 75vh;
 
    }
+
+    .breadcrumbpmodule {
+    padding: 0;
+    margin: 0;
+  }
+
+  .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

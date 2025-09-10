@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useRef} from 'react';
 import styles from '../css/Vsion.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faBriefcase, faChalkboardTeacher, faHandHolding, faHandsHolding, faIndustry, faPeopleArrows, faPersonChalkboard, faUsersRectangle, faBullseye} from '@fortawesome/free-solid-svg-icons';
@@ -7,16 +7,104 @@ import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
 
 const Vision=()=>{
 
+
+  const containerRefs = useRef([]);
+
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove(styles.active); // Reset animation
+            void entry.target.offsetWidth;               // Force reflow
+            entry.target.classList.add(styles.active);  // Trigger animation
+          }
+        });
+      },
+      { threshold: 0.1 }
+    )
+
+    containerRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      containerRefs.current.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
+
+
+
+  const visionData = [
+  {
+    icon: faBullseye,
+    title: "OUR MISSION",
+    description: `To preserve and promote the natural tastes of indigenous food.\nTo provide training in food processing technologies.\nTo create work opportunities for the youths.\nTo support entrepreneurs in creating a sustainable business model.`,
+  },
+  {
+    icon: faEye,
+    title: "OUR VISION",
+    description: "To empower the community and create a sustainable, healthy ecosystem.",
+  },
+  {
+    icon: farHeart,
+    title: "OUR VALUES",
+    description: `Purpose Driven\nNurturing\nEmpathetic\nCollaborative\nShared Success`,
+  },
+];
+
+
      return(
 
       <>
         <div id="vision" className={styles.visionDiv}>
-        <h2 class="text-center fw-bold mb-4">Mission, Vision & Values</h2>
-          <section className={`py-4 bg-white ${styles.visonSec}`} >
+
+        <section className={`py-4 bg-white ${styles.visonSec}`}>
+        <div className="container">
+          <div className="row text-center">
+            {visionData.map((item, index) => (
+              <div
+                key={index}
+                className={`col-12 col-md-4 mb-4 ${index < 2 ? 'border-md-end' : ''}`}
+                style={index < 2 ? { borderRight: "2px solid #ddd" } : {}}
+              >
+
+                <div ref={(el) => (containerRefs.current[index] = el)} className={styles.visioneffct}>
+                <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={item.icon} />
+                <div className="d-flex justify-content-center">
+                  <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
+                    {item.title}
+                  </h4>
+                </div>
+                <div className="my-2" style={{ width: "40px", height: "2px", background: "#000", margin: "10px auto" }}></div>
+                <p className={`text-muted ${styles.visionTxt}`}>
+                 {item.description.split('\n').map((line, idx) => (
+                      <span key={idx}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
+                </p>
+              </div>
+
+              
+                
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+        {/* <h2 class="text-center fw-bold mb-4">Mission, Vision & Values</h2> */}
+          {/* <section className={`py-4 bg-white ${styles.visonSec}`} >
                 <div className="container">
                   <div className="row text-center">
-                    {/* Mission */}
+                   
                     <div className="col-12 col-md-4 mb-4 border-md-end"  style={{ borderRight: "2px solid #ddd" }}>
+                     <div ref={ref} className={styles.visioneffct}>
                       <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={faBullseye} />
                       <div className='d-flex justify-content-center'>
                            <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
@@ -31,9 +119,12 @@ const Vision=()=>{
                         To support entrepreneurs in creating a sustainable business model.
                       </p>
                     </div>
+                    </div>
+                    
 
-                    {/* Vision */}
-                    <div className="col-12 col-md-4 mb-4 border-md-end"  style={{ borderRight: "2px solid #ddd" }}>
+                    
+                     <div className="col-12 col-md-4 mb-4 border-md-end"  style={{ borderRight: "2px solid #ddd" }}>
+                     <div ref={ref} className={styles.visioneffct}>
                       <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={faEye} />
                       <div className='d-flex justify-content-center'>
                           <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
@@ -47,8 +138,12 @@ const Vision=()=>{
                       </p>
                     </div>
 
-                    {/* Values */}
+                    </div>
+                   
+
+                   
                     <div className="col-12 col-md-4 mb-4">
+                     <div ref={ref} className={styles.visioneffct}>
                       <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={farHeart} />
                       <div className='d-flex justify-content-center'>
                           <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
@@ -64,11 +159,12 @@ const Vision=()=>{
                         Shared Success
                       </p>
                     </div>
+
+                    </div>
+                    
                   </div>
                 </div>
-              </section>
-
-
+              </section> */}
 
           {/* <div class="container my-5">
                 <h2 class="text-center fw-bold mb-4">Mission, Vision & Values</h2>

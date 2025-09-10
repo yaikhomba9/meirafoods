@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import style from '../css/LandingSection.module.css'
 import { Container, Row, Col, Button, Navbar, Nav } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
+import { Mali_700Bold } from '@expo-google-fonts/mali/700Bold';
 
 
 
@@ -18,10 +19,10 @@ const LandingSection =()=>{
    return (
     <>
 
-    <div style={{ backgroundColor: "#e71d26", minHeight: "50vh", color: "#fbeedb" }}>
+    <div className={style.landingDiv}>
      
       {/* Hero Section */}
-      <Container className="text-center py-5">
+      <Container className={`text-center py-5 ${style.containerDiv}`}>
         <h1 className="fw-bold display-4">Bringing Local <br /> Goodness <br/> to Every Table</h1>
         {/* <p className="lead mt-3">
           Because great coffee is the start of something even greater.
@@ -33,19 +34,19 @@ const LandingSection =()=>{
           
 
         <div className={`row justify-content-center ${style.imgDiv}`}>
-            <div className="col-lg-4  col-md-4 col-sm-4 col-xs-4 mb-4">
+            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-4 mb-4 ${style.image}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/imgland1.png`}
                     alt="King Chilli Pickle"
                      className={`${style.imgfluid1} ${style.imgTiltLeft}`}/>
             </div>
 
-            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4 ">
+            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-4 mb-4 ${style.image}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/imgland2.png`}
                     alt="King Chilli Pickle"
                     className={style.imgfluid2}/>
             </div>
 
-            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-4 mb-4 ${style.image}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/imgland3.png`}
                     alt="King Chilli Pickle"
                       className={`${style.imgfluid3} ${style.imgTiltRight}`}/>

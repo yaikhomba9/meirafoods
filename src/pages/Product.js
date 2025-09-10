@@ -86,8 +86,9 @@ const Product =()=>{
     return(
         <>      
                <div className={styles.navPath}>
-               <div className='row d-flex'>
-                      <div className={`col-sm-3  col-xs-3 ${styles.tglBtn}`}>
+               <div className='row d-flex align-items-center'>
+               {/* col-sm-3  col-xs-3 ${styles.tglBtn} */}
+                      <div className={`col-2 `}>
                          <button className={`${styles.navToggle}`} onClick={() => setShowNav(!showNav)}>
                           <span></span>
                           <span></span>
@@ -96,7 +97,7 @@ const Product =()=>{
 
                       </div>
 
-                      <div className={`col-sm-9 col-xs-9 ${styles.brdcrnSec}`}>
+                      <div className={`col-10 col-sm-9 col-xs-9 ${styles.brdcrnSec}`}>
                         <div className={`container breadcrumbpmodule`}>
                                                 <nav aria-label="breadcrumb">
                                                     <ol className="breadcrumb">

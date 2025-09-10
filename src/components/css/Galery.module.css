@@ -1,0 +1,63 @@
+.galleryDiv{
+
+    padding: 1rem;
+
+}
+
+/* .galleryDiv .slick-initialized .slick-slide-slider {
+  width: 100% !important;
+} */
+
+
+
+
+/* .galleryDiv .px-2:focus {
+  outline: none;
+  box-shadow: none;
+} */
+
+
+:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.galry{
+
+  background-color: #e71d26;
+  color: #fbfbfb;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+}
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.closeButton {
+  position: absolute;
+  top: -10px;
+  right: -45px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}

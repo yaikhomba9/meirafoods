@@ -6,6 +6,14 @@
     padding-top: 50px;
 }
 
+.containerDiv h1{
+
+    color: #fefafa;
+    font-family: 'Mali', cursive;
+ }
+
+
+
 .lndSecTxt{
 
     display: flex;
@@ -88,7 +96,54 @@ vertical-align: middle;
    }
 
 
+   .landingDiv{
+
+     
+     background-color: #e71d26;
+
+  }     
+
+
+/* .landingDiv ::before{ 
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: -1;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover;
+          border-bottom-left-radius: 200px;
+          transform-origin: bottom left;
+          background-color: #e71d26;
+          color: "#fbeedb";
+          min-height: "50vh";
+       }
+
+  .landingDiv{
+
+     position: relative;
+     overflow: hidden;
+
+  }      */
+
+        /* Colored curved footer */
+    
+
 @media   (min-width: 357px) and (max-width: 575px) {
+
+
+
+  .image{
+ 
+     display: none !important;
+}
+
+.containerDiv{
+
+    padding-bottom: 0px !important;
+
+}
 
 .imgfluid1{
 max-width: 100%;
@@ -127,6 +182,28 @@ display: none;
 }
 
 }
+
+
+/* @media (min-width: 783px){
+
+
+  .landingDiv ::before{
+
+    height : 900px;
+    width : 130vw;
+    transform : rotate(-8deg) translateX(50px);     
+  }
+
+  .landingDiv{
+
+    padding-top: var(--sb-body-padding-desktop);
+    min-height: 500px;
+  }
+  
+
+    
+  
+} */
 
 @media (min-width: 576px) and (max-width: 767px) {
     
@@ -171,6 +248,20 @@ vertical-align: middle;
     height: 10vh;
 }
 
+/* .landingDiv ::before{
+
+    height : 900px;
+    width : 140vw;
+    transform : rotate(-8deg) translateX(50px);     
+  } 
+
+   .landingDiv{
+
+     position: relative;
+     overflow: unset !important;
+
+  }     */
+
 }
 
  @media (min-width: 768px) and (max-width: 991px) {
@@ -205,6 +296,14 @@ vertical-align: middle;
   transition: transform 0.3s ease-in-out; /* smooth animation */
   margin-left: -175px;
 }
+
+
+/*   .landingDiv ::before{
+
+    height : 900px;
+    width : 140vw;
+    transform : rotate(-8deg) translateX(50px);     
+  }  */
 
   }
 
