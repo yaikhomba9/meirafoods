@@ -163,8 +163,8 @@ const openModal = (module) => {
     setSelectedModule(null);
   };
 
-  const truncateText = (text, maxLength = 35) => {
-    return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+  const truncateText = (text, maxLength = 25) => {
+    return text.length > maxLength ? text.slice(0, maxLength) + '.......' : text;
   };
 
     return(
