@@ -1,16 +1,86 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Modal, Button, Form } from 'react-bootstrap';
 import styles from '../css/Services.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faChalkboardTeacher, faHandHolding, faHandsHolding, faIndustry, faPeopleArrows, faPersonChalkboard, faUsersRectangle} from '@fortawesome/free-solid-svg-icons';
 import WaveDesignFull from '../WaveDesign/WaveDesignFull';
+import emailjs from '@emailjs/browser';
 
 
 const Services =()=>{
 
-      const sectionRef = useRef(null);
-      const [inView, setInView] = useState(false); 
+const form = useRef();
+const sectionRef = useRef(null);
+const [inView, setInView] = useState(false); 
+const [showModal, setShowModal] = useState(false);
+const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    contact: '',
+    remark: ''
+});
 
 
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+
+
+     e.preventDefault();
+
+    const templateParams ={
+
+      from_name : formData.name,
+      from_email :formData.email,
+      message : formData.remark,
+      contact_no: formData.contact,
+      to_email: "yaikhomc@gmail.com",
+      to_name:"Meira(Admin)",
+    };
+
+    const publicKey= "d9A_xI33x3EGiIoQB";
+    const serviceID= "service_5zk54ys";
+    const templateId = "template_3u29u8e";
+
+    emailjs.send(serviceID, templateId, templateParams, {
+        publicKey: publicKey,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+    setFormData({
+    name: '',
+    email: '',
+    contact: '',
+    remark: ''
+  });
+    // Add your submit logic (e.g., API call)
+    handleCloseModal();
+  };
+
+
+    // Toggle modal visibility
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    };
+
+    // Close modal
+    const closeModal = () => {
+        setShowModal(false);
+    };
 
 
     const cards = [
@@ -118,6 +188,43 @@ const Services =()=>{
 
 
 
+  const renderServiceContent = () => (
+
+    <>
+            
+          <div className="row">
+            <Form onSubmit={handleSubmit}>
+            <Form.Group className={`${styles.formAttrib} mb-3`} controlId="formName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" name="name" value={formData.name} onChange={handleChange} required />
+            </Form.Group>
+
+            <Form.Group className={`${styles.formAttrib} mb-3`} controlId="formEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" name="email" value={formData.email} onChange={handleChange} required />
+            </Form.Group>
+
+            <Form.Group className={`${styles.formAttrib} mb-3`} controlId="formContact">
+              <Form.Label>Contact Number</Form.Label>
+              <Form.Control type="tel" name="contact" value={formData.contact} onChange={handleChange} required />
+            </Form.Group>
+
+            <Form.Group className={`${styles.formAttrib} mb-3`} controlId="formRemark">
+              <Form.Label>Remark</Form.Label>
+              <Form.Control as="textarea" name="remark" value={formData.remark} onChange={handleChange} rows={3} />
+            </Form.Group>
+
+            <Button variant="success" type="submit">
+              Submit
+            </Button>
+          </Form>  
+        </div>
+        </>
+
+);
+
+
+
     return (
 
         <>
@@ -209,14 +316,62 @@ const Services =()=>{
                               entrepreneurship, and enterprise development.</p>
                        </div>
                     </div>
-                     
-
-
                  </div>
 
-              </div> 
 
-          </div>
+                  <div className="text-center my-4">
+                    <button type="button" className="btn btn-warning" onClick={handleOpenModal}>
+                     <b style={{ color: 'white' }}>Request a Service</b>
+                    </button>
+                  </div>
+
+
+                {showModal && (
+                        <div className="modal-backdrop show" onClick={closeModal}></div>
+                    )}
+                    <div 
+                        className={`modal ${showModal ? 'show d-block' : ''}`} 
+                        tabIndex="-1" 
+                        style={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
+                    >
+                        <div className="modal-dialog ">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h3 className="modal-title"><b>Request a service</b></h3>
+                                    <button 
+                                        type="button" 
+                                        className="btn-close" 
+                                        onClick={closeModal}
+                                    ></button>
+                                </div>
+                                <div className="modal-body">
+                                    {renderServiceContent()}
+                                </div>
+                                {/* <div className="modal-footer">
+                                    <button 
+                                        type="button" 
+                                        className="btn btn-secondary" 
+                                        onClick={closeModal}
+                                    >
+                                        Close
+                                    </button>
+                                     <button 
+                                        type="button" 
+                                        className="btn btn-primary" 
+                                        onClick={getSearchHandler()}
+                                    >
+                                        Apply Filters
+                                    </button> 
+                                </div> */}
+                            </div>
+                        </div>
+                    </div>
+
+              </div>
+              </div>
+              
+
+        
 
         </>
     );
