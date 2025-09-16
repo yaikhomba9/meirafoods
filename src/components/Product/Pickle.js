@@ -7,25 +7,71 @@ import { faIdCard, faSignOut, faUser, faTimes, faGlobe, faRoad, faBridge, faTraf
   faDownload,
   faTimesCircle,
   faTimesSquare} from '@fortawesome/free-solid-svg-icons';
+  import { Modal, Button } from 'react-bootstrap';
+
 
 
 const Pickle=()=>{
 
     const [loadedImages, setLoadedImages] = useState({});
+      const [showModal, setShowModal] = useState(false);
+      const [selectedModule, setSelectedModule] = useState(null);
 
     const modules = [
-    { name: 'KING CHILLI PICKLE', description: 'King chilli pickle', image : `${process.env.PUBLIC_URL}/images/KingChilli_pickle.png`},
-    { name: 'BAMBOO SHOOT PICKLE', description: 'Bamboo Shoot Pickle', image : `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.png`},
-    { name: 'FISH PICKLE', description: 'Fish Pickle', image : `${process.env.PUBLIC_URL}/images/Fish_pickle.png`},
-    { name: 'GARLIC PICKLE', description: 'Garlic Pickle', image : `${process.env.PUBLIC_URL}/images/Garlic_pickle.png`},
-    { name: 'LEMON PICKLE', description: 'Lemon Pickle',  image : `${process.env.PUBLIC_URL}/images/Lemon_pickle.png`},
-    { name: 'MANGO PICKLE', description: 'Mango Pickle',  image : `${process.env.PUBLIC_URL}/images/Mango_pickle.png`},
-    { name: 'MIX-VEG-PICKLE', description: 'Mix Vegetable Pickle',  image : `${process.env.PUBLIC_URL}/images/Mix_veg_pickle.png`},
-    { name: 'NGARI KING CHILLI PICKLE', description: 'Ngari King Chilli Pickle',  image : `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.png`},
-    { name: 'INSTANT NGARI', description: 'Instant Ngari',  image : `${process.env.PUBLIC_URL}/images/Ngari_pickle.png`},
-    { name: 'SOYA KING CHILLI PICKLE', description: 'Soya King Chilli Pickle',  image : `${process.env.PUBLIC_URL}/images/Soya_kingChilli_pickle.png`},
-    { name: 'NGARI & CHILLI PICKLE', description: 'Ngari Chilli Pickle', image : `${process.env.PUBLIC_URL}/images/ngari_chilli_pickle.png` },
-    { name: 'CHILLI KING PICKLE', description: 'Chilli King Pickle', image : `${process.env.PUBLIC_URL}/images/chilli_king_pickle.png`}
+    { 
+      name: 'Umorok King Chilli Pickle | Authentic Manipur Ghost Pepper', 
+      description: 'Ferociously hot yet aromatic King Chilli (Umorok) pickle from Manipur—crafted for true spice lovers. Add instant heat and depth to any meal.', 
+      image : `${process.env.PUBLIC_URL}/images/KingChilli_pickle.png`
+    },
+    { name: 'Soibum Bamboo Shoot Pickle | Fermented & Crunchy', 
+      description: 'Traditional fermented bamboo shoot pickle—tangy, crunchy, and culture-rich. A Northeastern staple for good reason.', 
+      image : `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.png`
+    },
+    { 
+      name: 'Rohu Fish Pickle | Ginger-Garlic Manipuri Style', 
+      description: 'Tender rohu in aromatic ginger-garlic pickle—balanced heat, big flavour, ready to serve with meals or snacks.', 
+      image : `${process.env.PUBLIC_URL}/images/Fish_pickle.png`
+    },
+    { 
+      name: 'Garlic Pickle | Slow-Cooked, Aromatic, Balanced', 
+      description: 'Smooth, full-bodied garlic pickle—flavourful and versatile. Serve with parathas, dal, or thalis.', 
+      image : `${process.env.PUBLIC_URL}/images/Garlic_pickle.png`
+    },
+    { 
+      name: 'Lemon Pickle | Tangy, Sun-Cured & Spiced', 
+      description: 'Zesty lemon pickle—balanced sour, bitter, and spice notes in every spoonful.',  
+      image : `${process.env.PUBLIC_URL}/images/Lemon_pickle.png`
+    },
+    { 
+      name: 'Traditional Mango Pickle | Manipur Local Mangoes', 
+      description: 'Handcrafted mango pickle with bold spices and the right sour-spicy balance.',  
+      image : `${process.env.PUBLIC_URL}/images/Mango_pickle.png`
+    },
+    { 
+      name: 'Mixed Veg Pickle with Kachai Lemon | Crunchy & Zesty', 
+      description: 'Exotic veggie medley lifted by Manipur’s GI-tagged Kachai Lemon—crunch, zing, and real Northeast character.',  
+      image : `${process.env.PUBLIC_URL}/images/Mix_veg_pickle.png`
+    },
+    { 
+      name: 'Ngari & King Chilli Pickle | Fermented Manipuri Classic', 
+      description: 'Fermented ngari meets Manipur’s King chilli for an intensely savoury, authentic pickle—perfect with rice, lai saag, or snacks.',  
+      image : `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.png`
+    },
+    { 
+      name: 'Instant Ngari | Ready-to-Use Fermented Fish from Manipur', 
+      description: 'Authentic Manipuri ngari—prepped and ready for everyday cooking. Big flavour, zero fuss.',  
+      image : `${process.env.PUBLIC_URL}/images/Ngari_pickle.png`
+    },
+    { 
+       name: 'Hawaijar & Umorok Pickle | Vegan Fermented Soybean',
+       description: 'Protein-rich fermented soy (hawaijar) with Manipur’s Umorok—pure umami heat, crafted in small batches.',  
+       image : `${process.env.PUBLIC_URL}/images/Soya_kingChilli_pickle.png`
+      },
+    { 
+       name: 'CHILLI KING PICKLE',
+       description: 'Chilli King Pickle', 
+       image : `${process.env.PUBLIC_URL}/images/chilli_king_pickle.png`
+      },
   ];
 
 
@@ -35,6 +81,20 @@ const Pickle=()=>{
 
   const handleImageError = (index) => {
     setLoadedImages((prev) => ({ ...prev, [index]: true }));
+  };
+
+   const openModal = (module) => {
+    setSelectedModule(module);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedModule(null);
+  };
+
+  const truncateText = (text, maxLength = 25) => {
+    return text.length > maxLength ? text.slice(0, maxLength) + '.......' : text;
   };
 
     return(
@@ -91,7 +151,14 @@ const Pickle=()=>{
                                     <hr></hr>
                                     <div className={`col-lg-12 col-md-12 col-sm-12 col-xs-8`}>
                                       <h6 className={`mb-0`}>{module.name}</h6>
-                                      <small className="text-muted">{module.description}</small>
+                                       <small className="text-muted">{truncateText(module.description)}</small>
+                                       <div className="mt-2">
+                                        <button
+                                          className="btn btn-primary btn-sm"
+                                          onClick={() => openModal(module)}>
+                                          More
+                                        </button>
+                                    </div>
                                     </div>
                                </div> 
                             </div>
@@ -101,6 +168,27 @@ const Pickle=()=>{
                     </div>
                   </div>
            </div>
+
+ {/* Modal for Full Description */}
+      <Modal show={showModal}>
+        <Modal.Header>
+          <Modal.Title>{selectedModule?.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className={styles.customModalBody}>
+          <img
+            src={selectedModule?.image}
+            alt={selectedModule?.name}
+            style={{ width: '100%', marginBottom: '1rem' }}
+            className={`img-fluid ${styles.customModalImage}`}
+          />
+          <p><b>Description: </b> {selectedModule?.description}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
          </>
     );

@@ -62,17 +62,16 @@ const Vision=()=>{
 
       <>
         <div id="vision" className={styles.visionDiv}>
-
-        <section className={`py-4 bg-white ${styles.visonSec}`}>
+{/* bg-white */}
+        <section className={`py-4  ${styles.visonSec}`}>
         <div className="container">
           <div className="row text-center">
             {visionData.map((item, index) => (
               <div
                 key={index}
-                className={`col-12 col-md-4 mb-4 ${index < 2 ? 'border-md-end' : ''}`}
-                style={index < 2 ? { borderRight: "2px solid #ddd" } : {}}
+                className={`col-12 col-md-4 mb-4  ${styles.border}`}
               >
-
+{/*  style={index < 2 ? { borderRight: "2px solid #ddd" } : {}} */}
                 <div ref={(el) => (containerRefs.current[index] = el)} className={styles.visioneffct}>
                 <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={item.icon} />
                 <div className="d-flex justify-content-center">

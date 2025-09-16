@@ -51,7 +51,7 @@ const LandingSection =()=>{
                     alt="King Chilli Pickle"
                       className={`${style.imgfluid3} ${style.imgTiltRight}`}/>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 mb-4">
+            <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <img src={`${process.env.PUBLIC_URL}/images/Pinapple_cookies_rmvbg.png`}
                     alt="King Chilli Pickle"
                       className={`${style.imgfluid4}`}/>

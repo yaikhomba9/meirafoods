@@ -1,4 +1,4 @@
-import React,{useState } from 'react';
+import React,{useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -9,6 +9,30 @@ import styles from '../css/Galery.module.css';
 
 const Galery =()=>{
   const [selectedImage, setSelectedImage] = useState(null);
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+
+    const updateSlidesToShow = () => {
+    const width = window.innerWidth;
+
+    if (width < 576) {
+      setSlidesToShow(1);
+    } else if (width < 768) {
+      setSlidesToShow(1);
+    } else if (width < 992) {
+      setSlidesToShow(2);
+    } else if (width < 1200) {
+      setSlidesToShow(3);
+    } else {
+      setSlidesToShow(4);
+    }
+  };
+
+    useEffect(() => {
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+    return () => window.removeEventListener('resize', updateSlidesToShow);
+  }, []);
 
   const NextArrow = (props) => {
   const { className, onClick } = props;
@@ -55,26 +79,12 @@ const customArrowStyle = {
     dots: false,
     infinite: true,
     speed: 500,
-     slidesToShow: 4,      // Adjust based on your preference
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     arrows: true,
-/*     variableWidth: true, */
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 3 }
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1 }
-      }
-    ] 
+    prevArrow: <PrevArrow />
+  
   };
 
 

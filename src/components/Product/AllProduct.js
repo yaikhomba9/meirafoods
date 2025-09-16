@@ -227,7 +227,7 @@ const openModal = (module) => {
            </div>
 {/* Modal for Full Description */}
       <Modal show={showModal} onHide={closeModal}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>{selectedModule?.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body className={styles.customModalBody}>

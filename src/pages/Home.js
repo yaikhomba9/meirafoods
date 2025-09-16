@@ -23,18 +23,18 @@ const Home = ()=>{
     return(
         <>
              {/* <ImageSlider /> */}
-              <LandingSection /> 
-             <TrendProdCSlider />
-             <About />
-             <Services />
-             <Testimonial />
-             <Vision />
-             <Awards />
-             <Teams />
+            <LandingSection /> 
+            <Vision />
+            <About />
+            <TrendProdCSlider />
+            <Services />
+            <Testimonial />
+            <Awards />
+            <Teams />
             {/*  <FormContact /> */}
-             <Galery />
-             <Contact />
-             <Footer />
+            <Galery />
+            <Contact />
+            <Footer />
 
         </>
     );

@@ -20,8 +20,8 @@
 
 .visonSec{
 
-     box-shadow: 0 2px 7px 1.9px rgba(13, 11, 11, 0.39);
-     border-radius: 15px;
+/*      box-shadow: 0 2px 7px 1.9px rgba(13, 11, 11, 0.39);
+ */     border-radius: 15px;
 
 }
 
@@ -40,8 +40,17 @@
 .visonLogo{
 
     color: #dc3545 !important;
+    animation: blink 3s infinite;
 }
    
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+}
 
 .visioneffct {
   opacity: 0;
@@ -62,3 +71,10 @@
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
+
