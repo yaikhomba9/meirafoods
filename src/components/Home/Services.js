@@ -41,12 +41,12 @@ const [formData, setFormData] = useState({
       from_email :formData.email,
       message : formData.remark,
       contact_no: formData.contact,
-      to_email: "yaikhomc@gmail.com",
+      to_email: "support@meirafoods.in",
       to_name:"Meira(Admin)",
     };
 
     const publicKey= "d9A_xI33x3EGiIoQB";
-    const serviceID= "service_5zk54ys";
+    const serviceID= "service_y6kbntm";
     const templateId = "template_3u29u8e";
 
     emailjs.send(serviceID, templateId, templateParams, {
