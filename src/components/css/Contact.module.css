@@ -5,6 +5,11 @@
    text-align: center;
 }
 
+
+.txtCatgry {
+  font-family: 'Lato', sans-serif;
+}
+
 .contactBodyDiv{
 
   padding: 2rem 0;

@@ -132,7 +132,7 @@
 
 .aboutmain p{
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #757575;
   font-size: 14px;
   font-weight: normal;
@@ -301,6 +301,10 @@
   background-color: #333; /* line color */
   margin: 5px 0; /* space between lines */
   border-radius: 2px;
+}
+
+.txtCatgry {
+  font-family: 'Lato', sans-serif;
 }
 
 

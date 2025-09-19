@@ -19,7 +19,7 @@ const TrendProdCSlider=()=>{
     {
       id: 'product',
       img: `${process.env.PUBLIC_URL}/images/imgland1.png`,
-      title: "Fish (Rohu/Rou) Pickle",
+      title: "Pickle",
       text: "Tender rohu in aromatic ginger-garlic pickle—balanced heat, big flavour, ready to serve with meals or snacks.",
       route: "/product/pickle", 
     },
@@ -47,14 +47,14 @@ const TrendProdCSlider=()=>{
     {
       id: 5,
       img: `${process.env.PUBLIC_URL}/images/candyImg.png`,
-      title: "Tamarind Candy",
+      title: "Candy",
       text: "Sweet-sour tamarind candy—classic Indian flavour you’ll keep reaching for.",
        route: "/product/candy",  
     },
     {
       id: 6,
       img: `${process.env.PUBLIC_URL}/images/kiwi_img.png`,
-      title: "Kiwi Jam",
+      title: "Jam",
       text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
       updated: "Last updated 20 mins ago",
       route: "/product/jam" ,  
@@ -62,7 +62,7 @@ const TrendProdCSlider=()=>{
     {
       id: 7,
       img: `${process.env.PUBLIC_URL}/images/Pinapple_cookies.png`,
-      title: "Pineapple Cookies",
+      title: "Cookies",
       text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
       route: "/product/all" ,  
     },
@@ -72,14 +72,14 @@ const TrendProdCSlider=()=>{
 
     <>
     <div className={`${styles.cardDiv}`}>
-    <div><h3><b><u>Customer Favorites</u></b></h3></div>
+    <div><h3><b style={{color:"red" }}><u>Category:</u></b></h3></div>
   <div className={`scroll-wrapper ${styles.scrollWrapper}`}>
   <div className={`scroll-content ${styles.scrollContent}`}>
     {cardData.concat(cardData).map((card) => (
       <div
         key={card.id + Math.random()} // avoid duplicate keys
         className={`card mb-3 mx-2 ${styles.carddiv1}`}
-        style={{ maxWidth: "400px", minWidth: "400px" }}
+        style={{ maxWidth: "400px", minWidth: "400px", cursor: "pointer"  }}
          onClick={() => handleRoute(card.route)} 
       >
         <div className="row g-0">
@@ -93,9 +93,9 @@ const TrendProdCSlider=()=>{
           <div className="col-12 col-md-8 ">
             <div className="card-body">
               <h5 className="card-title">
-                <b>{card.title}</b>
+                <b style={{ color:"red"}}>{card.title}</b>
               </h5>
-              <p className="card-text">{card.text}</p>
+              <p className={`card-text ${styles.txtCatgry}`}>{card.text}</p>
             </div>
           </div>
         </div>

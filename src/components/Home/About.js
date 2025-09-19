@@ -85,14 +85,14 @@ const About =()=>{
                <div className={`col-lg-6 col-md-12 col-sm-10 col-xs-12 ${styles.storyTxt} ${styles.hiddenLeft}`}>
 
                    <h2 className={`styles.header1`}>Read</h2><h3 className={`styles.header2`}><u>Our Story</u></h3>
-                   <p>
+                   <p className={styles.txtCatgry}>
                         Meira Foods, established in the year 2004 in Manipur, stands as a pioneering food processing enterprise 
                         dedicated to preserving and promoting the rich culinary heritage of the region. By transforming traditional
                         produce into high-quality, value-added products, the company bridges the gap between indigenous flavours and 
                         modern consumer markets. Its commitment lies in showcasing the authenticity of local ingredients while 
                         ensuring that every product reflects both cultural pride and contemporary standards of excellence. 
                    </p>
-                   <p>
+                   <p  className={styles.txtCatgry}>
                         At the heart of Meira Foods’ journey is its mission to empower women and create sustainable livelihood
                          opportunities. With more than two decades of community-driven engagement, the company has become a trusted 
                          partner for women entrepreneurs and small-scale farmers across Manipur. Through training, skill development, 
@@ -100,7 +100,7 @@ const About =()=>{
                          families’ well-being, and contribute meaningfully to their communities. This approach not only 
                          strengthens individual lives but also uplifts the socio-economic fabric of the region.
                    </p>
-                   <p>
+                   <p  className={styles.txtCatgry}>
                         Beyond business, Meira Foods embodies a vision of resilience and sustainability. 
                         By integrating traditional knowledge with modern processing techniques, 
                         the company reduces food waste, enhances market accessibility, and fosters environmental responsibility.
@@ -128,12 +128,12 @@ const About =()=>{
                         <img className={styles.meirapropieter} src={`${process.env.PUBLIC_URL}/images/cheTalu.jpg`} alt="Meira Foods Logo"/>
                     </div>
                     <div className={` col-lg-9 col-md-6 col-sm-8 col-xs-8 ${styles.propContext}`}>
-                        <p>"Meira Foods is a movement to create opportunities for every woman, providing them with a livelihood 
+                        <p  className={styles.txtCatgry}>"Meira Foods is a movement to create opportunities for every woman, providing them with a livelihood 
                         option that allows them to participate in nation-building and live a dignified life. 
                         Please support us and support our women by buying our products and giving us feedback, 
                         so we can serve you better."</p>
-                        <p>- Hanjabam Shubhra Devi</p>
-                        <p>Managing Director  - Meira Foods</p>
+                        <p  className={styles.txtCatgry}>- Hanjabam Shubhra Devi</p>
+                        <p  className={styles.txtCatgry}>Managing Director  - Meira Foods</p>
                     </div>
 
                   </div>

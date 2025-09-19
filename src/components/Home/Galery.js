@@ -103,7 +103,7 @@ const customArrowStyle = {
                 alt={`Gallery ${index + 1}`}
                 className="img-fluid rounded img"
                 style={{ height: '300px', width: '100%', objectFit: 'cover' , border: '2px solid rgba(0, 0, 0, 0.05)',
-                  boxShadow : '0 2px 7px 1px rgba(10, 9, 9, 0.15)' }}
+                  boxShadow : '0 2px 7px 1px rgba(10, 9, 9, 0.15)', cursor:'pointer' }}
                   onClick={() => setSelectedImage(img)}
               />
             </div>

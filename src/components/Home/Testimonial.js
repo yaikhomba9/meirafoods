@@ -56,7 +56,7 @@ const Testimonial=()=>{
                                  <FontAwesomeIcon className={styles.testImage} icon={faUserCircle}/>
                                </div>
                               <div className={styles.testContent}>
-                                 <p>  
+                                 <p  className={styles.txtCatgry}>  
                                       "One of the famous food processing industries in Manipur."
                                  </p>
                                  <div className={styles.testName}>
@@ -73,7 +73,7 @@ const Testimonial=()=>{
                                  <FontAwesomeIcon className={styles.testImage} icon={faUserCircle}/>
                                </div>
                               <div className={styles.testContent}>
-                                 <p>  
+                                 <p  className={styles.txtCatgry}>  
                                       "Mushroom pickle is very tasty. I like it very much."
                                  </p>
                                  <div className={styles.testName}>
@@ -90,7 +90,7 @@ const Testimonial=()=>{
                                  <FontAwesomeIcon className={styles.testImage} icon={faUserCircle}/>
                                </div>
                               <div className={styles.testContent}>
-                                 <p>  
+                                 <p  className={styles.txtCatgry}>  
                                       "Dehydrated exotic fruits are very tasty. All other products are very good."
                                  </p>
                                  <div className={styles.testName}>

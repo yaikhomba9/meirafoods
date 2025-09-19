@@ -2,7 +2,10 @@
 
 
     background-color: #F7F7F7;
-    padding: 4rem;
+    padding: 1rem;
+}
+.txtCatgry {
+  font-family: 'Lato', sans-serif;
 }
 
 .hdtxt{

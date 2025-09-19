@@ -55,6 +55,7 @@ const [formData, setFormData] = useState({
       .then(
         () => {
           console.log('SUCCESS!');
+          alert('Your request has been register successfully.');
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -262,7 +263,7 @@ const [formData, setFormData] = useState({
                  <div className={styles.serviceMainTitle}>
 
                     <h1>Our Services</h1>
-                    <p>Our professional services are designed to deliver exceptional value, tailored solutions, 
+                    <p className={styles.txtCatgry}>Our professional services are designed to deliver exceptional value, tailored solutions, 
                     and seamless experiences to meet your unique needs and drive success.</p>
                  </div>
 
@@ -273,8 +274,8 @@ const [formData, setFormData] = useState({
                            <FontAwesomeIcon className={styles.serviceIcon} icon={faPeopleArrows}/>
                        </div>
                        <div className={styles.serviceDesc}>
-                           <h3 className={styles.globalFont}>Micropreneur (Foodpreneur)</h3>
-                           <p>We provide consultation and guidance programs to support aspiring micropreneurs (foodpreneurs), 
+                           <h3 className={`${styles.globalFont} ${styles.txtCatgry} `}>Micropreneur (Foodpreneur)</h3>
+                           <p  className={styles.txtCatgry}>We provide consultation and guidance programs to support aspiring micropreneurs (foodpreneurs), 
                               helping them establish and grow their food businesses.
                            </p>
                        </div>
@@ -283,8 +284,8 @@ const [formData, setFormData] = useState({
                     <div className={`col-md-4 ${styles.srvDiv} ${styles.hidden} ${styles.stagger2}`}>
                        <FontAwesomeIcon className={styles.serviceIcon} icon={faIndustry}/>
                        <div className={styles.serviceDesc}>
-                           <h3 className={styles.globalFont}>Product Development & Enterprise Support</h3>
-                           <p>Our team assists in developing new food products, finalizing product concepts, 
+                           <h3 className={`${styles.globalFont} ${styles.txtCatgry} `}>Product Development & Enterprise Support</h3>
+                           <p  className={styles.txtCatgry}>Our team assists in developing new food products, finalizing product concepts, 
                               confirming shelf life, and testing consumer acceptability to ensure successful market entry.</p>
 
                        </div>
@@ -293,8 +294,8 @@ const [formData, setFormData] = useState({
                      <div className={`col-md-4 ${styles.srvDiv} ${styles.hidden} ${styles.stagger3}`}>
                        <FontAwesomeIcon className={styles.serviceIcon} icon={faChalkboardTeacher}/>
                        <div className={styles.serviceDesc}>
-                           <h3 className={styles.globalFont}>Farmers’ Training Programme</h3>
-                           <p>We conduct specialized training programs for farmers, enabling them to create 
+                           <h3 className={`${styles.globalFont} ${styles.txtCatgry}`}>Farmers’ Training Programme</h3>
+                           <p  className={styles.txtCatgry}>We conduct specialized training programs for farmers, enabling them to create 
                               secondary sources of income.</p>
 
                        </div>
@@ -302,8 +303,8 @@ const [formData, setFormData] = useState({
                      <div className={`col-md-6 ${styles.srvDiv} ${styles.hidden} ${styles.stagger4}`}>
                        <FontAwesomeIcon className={styles.serviceIcon} icon={faUsersRectangle}/>
                        <div className={styles.serviceDesc}>
-                           <h3 className={styles.globalFont}>Training for Self-Help Groups</h3>
-                           <p>We provide training for self-help groups (SHGs) to engage in income-generating activities, 
+                           <h3 className={`${styles.globalFont} ${styles.txtCatgry}`}>Training for Self-Help Groups</h3>
+                           <p  className={styles.txtCatgry}>We provide training for self-help groups (SHGs) to engage in income-generating activities, 
                               empowering communities and creating sustainable livelihoods.</p>
 
                        </div>
@@ -311,8 +312,8 @@ const [formData, setFormData] = useState({
                      <div className={`col-md-6 ${styles.srvDiv} ${styles.hidden} ${styles.stagger5}`}>
                        <FontAwesomeIcon className={styles.serviceIcon} icon={faPersonChalkboard}/>
                        <div className={styles.serviceDesc}>
-                           <h3 className={styles.globalFont}>Student Internship Opportunities</h3>
-                           <p>We offer internship opportunities to students, giving them hands-on experience in food processing, 
+                           <h3 className={`${styles.globalFont} ${styles.txtCatgry}`}>Student Internship Opportunities</h3>
+                           <p  className={styles.txtCatgry}>We offer internship opportunities to students, giving them hands-on experience in food processing, 
                               entrepreneurship, and enterprise development.</p>
                        </div>
                     </div>
@@ -337,7 +338,7 @@ const [formData, setFormData] = useState({
                         <div className="modal-dialog ">
                             <div className="modal-content">
                                 <div className="modal-header">
-                                    <h3 className="modal-title"><b>Request a service</b></h3>
+                                    <h3 className={`modal-title  ${styles.txtCatgry}`}><b>Request a service</b></h3>
                                     <button 
                                         type="button" 
                                         className="btn-close" 
@@ -369,10 +370,7 @@ const [formData, setFormData] = useState({
 
               </div>
               </div>
-              
-
-        
-
+            
         </>
     );
 }

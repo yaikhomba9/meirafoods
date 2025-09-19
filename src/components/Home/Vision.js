@@ -63,7 +63,7 @@ const Vision=()=>{
       <>
         <div id="vision" className={styles.visionDiv}>
 {/* bg-white */}
-        <section className={`py-4  ${styles.visonSec}`}>
+        <section className={`${styles.visonSec}`}>
         <div className="container">
           <div className="row text-center">
             {visionData.map((item, index) => (
