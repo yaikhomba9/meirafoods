@@ -58,11 +58,54 @@ const Vision=()=>{
 ];
 
 
-     return(
+useEffect(() => {
+  const restartAnimation = (el) => {
+    if (!el) return;
+    el.classList.remove(styles.popEffect); // remove class
+    el.style.animation = "none"; // stop current animation
+    void el.offsetWidth; // force reflow
+    el.style.animation = ""; // reset animation property
+    el.classList.add(styles.popEffect); // re-add class
+  };
 
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // animate the card
+          const card = entry.target;
+          card.classList.remove(styles.active);
+          void card.offsetWidth;
+          card.classList.add(styles.active);
+
+          // animate the icon inside
+          const icon = card.querySelector(`.${styles.visonLogo}`);
+          restartAnimation(icon);
+        }
+      });
+    },
+    { threshold: 0.3 } // fire when 30% is visible
+  );
+
+  containerRefs.current.forEach((el) => {
+    if (el) observer.observe(el);
+  });
+
+  return () => {
+    containerRefs.current.forEach((el) => {
+      if (el) observer.unobserve(el);
+    });
+  };
+}, []);
+
+
+
+
+
+return(
       <>
         <div id="vision" className={styles.visionDiv}>
-{/* bg-white */}
+         {/* bg-white */}
         <section className={`${styles.visonSec}`}>
         <div className="container">
           <div className="row text-center">
@@ -73,7 +116,7 @@ const Vision=()=>{
               >
 {/*  style={index < 2 ? { borderRight: "2px solid #ddd" } : {}} */}
                 <div ref={(el) => (containerRefs.current[index] = el)} className={styles.visioneffct}>
-                <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo}`} icon={item.icon} />
+                <FontAwesomeIcon className={`fa-5x mb-3 text-dark ${styles.visonLogo} `} icon={item.icon} />
                 <div className="d-flex justify-content-center">
                   <h4 className={`d-inline-block px-3 py-1 text-white fw-bold ${styles.visonhdr}`}>
                     {item.title}

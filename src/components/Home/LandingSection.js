@@ -32,20 +32,20 @@ const LandingSection =()=>{
         </div> */}
           
 
-        <div className={`row justify-content-center ${style.imgDiv}`}>
-            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-4  ${style.image}`}>
+        {/* <div className={`row justify-content-center ${style.imgDiv}`}>
+            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-2  ${style.image}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/imgland1.png`}
                     alt="King Chilli Pickle"
                      className={`${style.imgfluid1} ${style.imgTiltLeft}`}/>
             </div>
 
-            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-4  ${style.image}`}>
+            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-2  ${style.image}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/imgland2.png`}
                     alt="King Chilli Pickle"
                     className={style.imgfluid2}/>
             </div>
 
-            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-4  ${style.image}`}>
+            <div className={`col-lg-4  col-md-4 col-sm-4 col-xs-2  ${style.image}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/imgland3.png`}
                     alt="King Chilli Pickle"
                     className={`${style.imgfluid3} ${style.imgTiltRight}`}/>
@@ -55,7 +55,33 @@ const LandingSection =()=>{
                     alt="King Chilli Pickle"
                     className={`${style.imgfluid4}`}/>
             </div>
-         </div>
+         </div> */}
+
+        <div className={`row justify-content-center ${style.imgDiv}`}>
+          <div className={`col-4 ${style.image}`}>
+            <img 
+              src={`${process.env.PUBLIC_URL}/images/imgland1.png`}
+              alt="King Chilli Pickle"
+              className={`${style.imgfluid} ${style.imgTiltLeft}`}
+            />
+          </div>
+
+          <div className={`col-4 ${style.image}`}>
+            <img 
+              src={`${process.env.PUBLIC_URL}/images/imgland2.png`}
+              alt="King Chilli Pickle"
+              className={`${style.imgfluid} ${style.centerImage}`}
+            />
+          </div>
+
+          <div className={`col-4 ${style.image}`}>
+            <img 
+              src={`${process.env.PUBLIC_URL}/images/imgland3.png`}
+              alt="King Chilli Pickle"
+              className={`${style.imgfluid} ${style.imgTiltRight}`}
+            />
+          </div>
+        </div>
 
 
        {/*  <Row className="mt-5 justify-content-center">

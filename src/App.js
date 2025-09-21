@@ -8,12 +8,12 @@ const Home = React.lazy(() => import('./pages/Home'));
 const Product = React.lazy(()=> import('./pages/Product'))
 const Header = React.lazy(() => import('./components/Home/Header'));
 
-
+{/* <Router> */}
 function App() {
   return (
 
-       <Router> 
-      {/* <Router basename="/meirafoods"> */}
+       
+      <Router basename="/meirafoods" > 
       <Suspense fallback={<div>Loading...</div>}>
           <Header />
           <Routes>

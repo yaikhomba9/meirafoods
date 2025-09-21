@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import styles from '../css/TrendProdSlider.module.css'
 import { Carousel } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
@@ -13,7 +13,11 @@ const TrendProdCSlider=()=>{
     };
   
      const navigate = useNavigate();
-
+    const scrollContainerRef = useRef(null);
+    const [showLeftButton, setShowLeftButton] = useState(false);
+    const [showRightButton, setShowRightButton] = useState(true);
+    const [isPaused, setIsPaused] = useState(false);  
+    const [currentPosition, setCurrentPosition] = useState(0);   
 
    const cardData = [
     {
@@ -68,12 +72,135 @@ const TrendProdCSlider=()=>{
     },
   ];
 
+
+
+  // Scroll functions
+  const cardWidth = 400 + 16; // 400px width + 16px margin (mx-2 adds 0.5rem each side)
+
+  // Scroll functions with infinite behavior
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const newPosition = currentPosition - 1;
+      
+      if (newPosition < 0) {
+        // Jump to the end for infinite effect
+        setCurrentPosition(cardData.length - 1);
+        container.scrollTo({
+          left: (cardData.length - 1) * cardWidth,
+          behavior: 'smooth'
+        });
+      } else {
+        setCurrentPosition(newPosition);
+        container.scrollTo({
+          left: newPosition * cardWidth,
+          behavior: 'smooth'
+        });
+      }
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const newPosition = currentPosition + 1;
+      
+      if (newPosition >= cardData.length) {
+        // Jump to the beginning for infinite effect
+        setCurrentPosition(0);
+        container.scrollTo({
+          left: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        setCurrentPosition(newPosition);
+        container.scrollTo({
+          left: newPosition * cardWidth,
+          behavior: 'smooth'
+        });
+      }
+    }
+  };
+
+  // Check scroll position to show/hide buttons
+  const checkScrollPosition = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      setShowLeftButton(scrollLeft > 0);
+      setShowRightButton(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  }; 
+
+
+
+  // Auto-scroll effect
+ /*  useEffect(() => {
+    let autoScrollInterval;
+    
+   
+      autoScrollInterval = setInterval(() => {
+        scrollRight();
+      }, 5000);
+    
+    
+    return () => {
+      clearInterval(autoScrollInterval);
+    };
+  }, [ currentPosition]); */
+ 
+
+  // Handle manual scroll
+   useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (scrollContainer) {
+      scrollContainer.addEventListener('scroll', checkScrollPosition);
+      
+      // Initial check
+      checkScrollPosition();
+      
+      // Auto-scroll animation
+     /*  let autoScrollInterval;
+      
+    
+        autoScrollInterval = setInterval(() => {
+          if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+            scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+            scrollContainer.scrollBy({ left: 400, behavior: 'smooth' });
+          }
+        }, 3000); */
+      
+      
+      return () => {
+        scrollContainer.removeEventListener('scroll', checkScrollPosition);
+        //clearInterval(autoScrollInterval);
+      };
+    }
+  }, [currentPosition]); 
+
+
     return(
 
     <>
     <div className={`${styles.cardDiv}`}>
     <div><h3><b style={{color:"red" }}><u>Category:</u></b></h3></div>
-  <div className={`scroll-wrapper ${styles.scrollWrapper}`}>
+     <div className={`${styles.controls} d-flex justify-content-end `}>
+            <button 
+              className={`${styles.scrollButton} ${styles.leftButton} ${!showLeftButton ? styles.hidden : ''}`}
+              onClick={scrollLeft}
+              aria-label="Scroll left"
+            >
+              &#8249;
+            </button>
+            <button 
+              className={`${styles.scrollButton} ${styles.rightButton} ${!showRightButton ? styles.hidden : ''}`}
+              onClick={scrollRight}
+              aria-label="Scroll right"
+            >
+              &#8250;
+            </button>
+          </div>
+  <div className={`scroll-wrapper ${styles.scrollWrapper}`} ref={scrollContainerRef}>
   <div className={`scroll-content ${styles.scrollContent}`}>
     {cardData.concat(cardData).map((card) => (
       <div
