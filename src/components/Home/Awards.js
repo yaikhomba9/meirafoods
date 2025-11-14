@@ -83,13 +83,13 @@ const Awards=()=>{
                 <div className={'row'}>
                 <div className={`col-lg-2`}></div>
                     <div className={`col-lg-3 col-md-4 col-sm-4 col-xs-3 d-flex justify-content-center ${styles.hidden} ${styles.stagger1}`}>
-                       <img className={styles.meiraAwards} src={`${process.env.PUBLIC_URL}/images/awards1.png`} alt="Meira Awards"/>
+                       <img className={styles.meiraAwards} src={`${process.env.PUBLIC_URL}/images/awards1.webp`} alt="Meira Awards"/>
                     </div>
                     <div className={`col-lg-3 col-md-4 col-sm-4 col-xs-3 d-flex justify-content-center ${styles.hidden} ${styles.stagger2}`}>
-                        <img className={styles.meiraAwards} src={`${process.env.PUBLIC_URL}/images/awards2.png`} alt="Meira Awards"/>
+                        <img className={styles.meiraAwards} src={`${process.env.PUBLIC_URL}/images/awards2.webp`} alt="Meira Awards"/>
                     </div>
                     <div className={`col-lg-3 col-md-4 col-sm-4 col-xs-3 d-flex justify-content-center ${styles.hidden} ${styles.stagger3}`}>
-                         <img className={styles.meiraAwards} src={`${process.env.PUBLIC_URL}/images/awards3.png`} alt="Meira Awards"/>
+                         <img className={styles.meiraAwards} src={`${process.env.PUBLIC_URL}/images/awards3.webp`} alt="Meira Awards"/>
                     </div>
                     <div className={`col-lg-1`}></div>
                 </div>

@@ -66,11 +66,11 @@ const customArrowStyle = {
 };
 
      const images = [
-    `${process.env.PUBLIC_URL}/images/KingChilli_pickle.png`,
-    `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.png`,
-    `${process.env.PUBLIC_URL}/images/Fish_pickle.png`,
-    `${process.env.PUBLIC_URL}/images/Lemon_pickle.png`,
-    `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.png`,
+    `${process.env.PUBLIC_URL}/images/KingChilli_pickle.webp`,
+    `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.webp`,
+    `${process.env.PUBLIC_URL}/images/Fish_pickle.webp`,
+    `${process.env.PUBLIC_URL}/images/Lemon_pickle.webp`,
+    `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.webp`,
     // Add more image URLs as needed
   ];
 

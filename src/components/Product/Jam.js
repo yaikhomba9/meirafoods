@@ -14,15 +14,15 @@ const Jam=()=>{
     
    { name: 'KIWI JAM', 
       description: 'Kiwi Jam', 
-      image : `${process.env.PUBLIC_URL}/images/Kiwi_jam.png` 
+      image : `${process.env.PUBLIC_URL}/images/Kiwi_jam.webp` 
     },
     { name: 'PINEAPPLE JAM',
        description: 'Pineapple Jam', 
-       image : `${process.env.PUBLIC_URL}/images/pineapple_jam.png`
+       image : `${process.env.PUBLIC_URL}/images/pineapple_jam.webp`
       },
     { name: 'MIX FRUIT JAM', 
       description: 'Mix Fruit Jam', 
-      image : `${process.env.PUBLIC_URL}/images/mix_fruit.png`
+      image : `${process.env.PUBLIC_URL}/images/mix_fruit.webp`
     },
    
   ];

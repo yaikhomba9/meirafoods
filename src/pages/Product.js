@@ -130,7 +130,7 @@ const Product =()=>{
                         </div>
 
                         <div className={styles.user_icon_div}>
-                          <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meirafoods_img_13.jpg`} alt="Meira Foods Logo" />
+                          <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meirafoods_img_13.webp`} alt="Meira Foods Logo" />
                          <h6>Product Category</h6>
                         </div>
                         <ul className={styles.navList}> 

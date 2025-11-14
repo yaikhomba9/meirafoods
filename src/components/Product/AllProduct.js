@@ -16,130 +16,130 @@ const Candy=()=>{
     { 
       name: 'Umorok King Chilli Pickle | Authentic Manipur Ghost Pepper', 
       description: 'Ferociously hot yet aromatic King Chilli (Umorok) pickle from Manipur—crafted for true spice lovers. Add instant heat and depth to any meal.', 
-      image : `${process.env.PUBLIC_URL}/images/KingChilli_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/KingChilli_pickle.webp`
     },
     { name: 'Soibum Bamboo Shoot Pickle | Fermented & Crunchy', 
       description: 'Traditional fermented bamboo shoot pickle—tangy, crunchy, and culture-rich. A Northeastern staple for good reason.', 
-      image : `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.webp`
     },
     { 
       name: 'Rohu Fish Pickle | Ginger-Garlic Manipuri Style', 
       description: 'Tender rohu in aromatic ginger-garlic pickle—balanced heat, big flavour, ready to serve with meals or snacks.', 
-      image : `${process.env.PUBLIC_URL}/images/Fish_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Fish_pickle.webp`
     },
     { 
       name: 'Garlic Pickle | Slow-Cooked, Aromatic, Balanced', 
       description: 'Smooth, full-bodied garlic pickle—flavourful and versatile. Serve with parathas, dal, or thalis.', 
-      image : `${process.env.PUBLIC_URL}/images/Garlic_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Garlic_pickle.webp`
     },
     { 
       name: 'Lemon Pickle | Tangy, Sun-Cured & Spiced', 
       description: 'Zesty lemon pickle—balanced sour, bitter, and spice notes in every spoonful.',  
-      image : `${process.env.PUBLIC_URL}/images/Lemon_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Lemon_pickle.webp`
     },
     { 
       name: 'Traditional Mango Pickle | Manipur Local Mangoes', 
       description: 'Handcrafted mango pickle with bold spices and the right sour-spicy balance.',  
-      image : `${process.env.PUBLIC_URL}/images/Mango_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Mango_pickle.webp`
     },
     { 
       name: 'Mixed Veg Pickle with Kachai Lemon | Crunchy & Zesty', 
       description: 'Exotic veggie medley lifted by Manipur’s GI-tagged Kachai Lemon—crunch, zing, and real Northeast character.',  
-      image : `${process.env.PUBLIC_URL}/images/Mix_veg_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Mix_veg_pickle.webp`
     },
     { 
       name: 'Ngari & King Chilli Pickle | Fermented Manipuri Classic', 
       description: 'Fermented ngari meets Manipur’s King chilli for an intensely savoury, authentic pickle—perfect with rice, lai saag, or snacks.',  
-      image : `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.webp`
     },
     { 
       name: 'Instant Ngari | Ready-to-Use Fermented Fish from Manipur', 
       description: 'Authentic Manipuri ngari—prepped and ready for everyday cooking. Big flavour, zero fuss.',  
-      image : `${process.env.PUBLIC_URL}/images/Ngari_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Ngari_pickle.webp`
     },
     { 
        name: 'Hawaijar & Umorok Pickle | Vegan Fermented Soybean',
        description: 'Protein-rich fermented soy (hawaijar) with Manipur’s Umorok—pure umami heat, crafted in small batches.',  
-       image : `${process.env.PUBLIC_URL}/images/Soya_kingChilli_pickle.png`
+       image : `${process.env.PUBLIC_URL}/images/Soya_kingChilli_pickle.webp`
       },
     { 
        name: 'CHILLI KING PICKLE',
        description: 'Chilli King Pickle', 
-       image : `${process.env.PUBLIC_URL}/images/chilli_king_pickle.png`
+       image : `${process.env.PUBLIC_URL}/images/chilli_king_pickle.webp`
       },
     { 
       name: 'Amla Candy | Vitamin-C Rich Sweet-Tart Bites', 
       description: 'Traditional amla candy—tangy, tasty, and naturally rich in vitamin C.', 
-      image : `${process.env.PUBLIC_URL}/images/amla_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/amla_candy.webp`
      },
     { 
       name: 'Ginger Candy | Zingy, Soothing, Digestive',
        description: 'Classic ginger candy—comforting heat and travel-friendly.', 
-       image : `${process.env.PUBLIC_URL}/images/ginger_candy.png` 
+       image : `${process.env.PUBLIC_URL}/images/ginger_candy.webp` 
       },
     { name: 'HEIBUM CANDY', 
       description: 'Heibum Candy', 
-      image : `${process.env.PUBLIC_URL}/images/heibum_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/heibum_candy.webp`
     },
     { name: 'Mango Candy | Chewy, Aromatic, King-of-Fruits', 
       description: 'Sun-bright mango candy—tropical sweetness in every bite.', 
-      image : `${process.env.PUBLIC_URL}/images/mango_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/mango_candy.webp`
      },
     { name: 'Indian Olive Candy | Tangy Jolphai/Heibong', 
       description: 'Zesty Indian olive candy—distinctive Northeast flavour with natural fruit goodness.',  
-      image : `${process.env.PUBLIC_URL}/images/oliv_candy.png` 
+      image : `${process.env.PUBLIC_URL}/images/oliv_candy.webp` 
     },
     { name: 'Pineapple Candy | Tropical & Juicy', 
       description: 'Real pineapple flavour with bromelain’s natural digestive support—crafted into chewy candy.',  
-      image : `${process.env.PUBLIC_URL}/images/pineape_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/pineape_candy.webp`
     },
     { name: 'Plum Candy | Juicy, Tangy, Antioxidant-Rich', 
       description: 'Sweet-tart plum candy with natural fruit goodness—a satisfying anytime nibble.',  
-      image : `${process.env.PUBLIC_URL}/images/plum_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/plum_candy.webp`
     },
     { name: 'Tamarind Candy | Tangy, Nostalgic, Addictive',
        description: 'Sweet-sour tamarind candy—classic Indian flavour you’ll keep reaching for.',  
-       image : `${process.env.PUBLIC_URL}/images/tanmarind_candy.png`
+       image : `${process.env.PUBLIC_URL}/images/tanmarind_candy.webp`
       },
     { name: 'Wild Apple Candy | Sweet-Sour Hillside Treat', 
       description: 'Northeast wild apple candy—zesty flavour with natural fruit goodness.',  
-      image : `${process.env.PUBLIC_URL}/images/wildApple_candy.png` 
+      image : `${process.env.PUBLIC_URL}/images/wildApple_candy.webp` 
     },
     { name: 'KIWI JAM', 
       description: 'Kiwi Jam', 
-      image : `${process.env.PUBLIC_URL}/images/Kiwi_jam.png` 
+      image : `${process.env.PUBLIC_URL}/images/Kiwi_jam.webp` 
     },
     { name: 'PINEAPPLE JAM',
        description: 'Pineapple Jam', 
-       image : `${process.env.PUBLIC_URL}/images/pineapple_jam.png`
+       image : `${process.env.PUBLIC_URL}/images/pineapple_jam.webp`
       },
     { name: 'MIX FRUIT JAM', 
       description: 'Mix Fruit Jam', 
-      image : `${process.env.PUBLIC_URL}/images/mix_fruit.png`
+      image : `${process.env.PUBLIC_URL}/images/mix_fruit.webp`
     },
     { name: 'PINEAPPLE SQUASH', 
       description: 'Pineapple Squash', 
-      image : `${process.env.PUBLIC_URL}/images/lemon_squash.png`
+      image : `${process.env.PUBLIC_URL}/images/lemon_squash.webp`
     },
     { name: 'MILLET LADOO', 
       description: 'Millet Ladoo', 
-      image : `${process.env.PUBLIC_URL}/images/Millet_ladoo.png`
+      image : `${process.env.PUBLIC_URL}/images/Millet_ladoo.webp`
     },
     { name: 'PINEAPPLE COOKIES', 
       description: 'Pineapple Cookies', 
-      image : `${process.env.PUBLIC_URL}/images/Pinapple_cookies.png`
+      image : `${process.env.PUBLIC_URL}/images/Pinapple_cookies.webp`
     },
     { name: 'PINEAPPLE CUBES', 
       description: 'Pineapple Cubes', 
-      image : `${process.env.PUBLIC_URL}/images/Pinapple_cubes.png`
+      image : `${process.env.PUBLIC_URL}/images/Pinapple_cubes.webp`
     },
     { name: 'BORI', 
       description: 'Bori', 
-      image : `${process.env.PUBLIC_URL}/images/Bori.png`
+      image : `${process.env.PUBLIC_URL}/images/Bori.webp`
     },
     { name: 'MAROI BORI', 
       description: 'Maroi Bori', 
-      image : `${process.env.PUBLIC_URL}/images/Maroi_bori.png`
+      image : `${process.env.PUBLIC_URL}/images/Maroi_bori.webp`
     }
     
   ];
@@ -185,7 +185,7 @@ const openModal = (module) => {
                                        <div className={styles.imageWrapper}>
                                     {!loadedImages[index] && (
                                       <img
-                                        src={`${process.env.PUBLIC_URL}/images/loader_img.png`}
+                                        src={`${process.env.PUBLIC_URL}/images/loader_img.webp`}
                                         alt="Loading..."
                                         className={styles.loaderOverlay}
                                       />

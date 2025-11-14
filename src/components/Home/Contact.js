@@ -47,13 +47,13 @@ const Contact=()=>{
                         <h6 className={`mb-3 ${styles.otherbrandText}`}><b><u>Our products are available on:</u></b></h6>
                           <div className="d-flex justify-content-center gap-4 flex-wrap">
                               <a  href="https://www.amazon.in" target="_blank" rel="noopener noreferrer">
-                                 <img className={styles.otherbrandLogo} src={`${process.env.PUBLIC_URL}/images/amazon_resized.png`} alt="Amazon"/>
+                                 <img className={styles.otherbrandLogo} src={`${process.env.PUBLIC_URL}/images/amazon_resized.webp`} alt="Amazon"/>
                               </a>
                               <a href="https://digihaat.in/" target="_blank" rel="noopener noreferrer">
-                                 <img className={styles.otherbrandLogo} src={`${process.env.PUBLIC_URL}/images/digihaat_resized.png`} alt="DigiHaat" />
+                                 <img className={styles.otherbrandLogo} src={`${process.env.PUBLIC_URL}/images/digihaat_resized.webp`} alt="DigiHaat" />
                               </a>
                               <a href="https://www.mystore.in/en/seller/2745bfda956fd8aff07769ff5ed65449" target="_blank" rel="noopener noreferrer">
-                                 <img className={styles.otherbrandLogo} src={`${process.env.PUBLIC_URL}/images/mystore_resized.png`} alt="MyStore"  />
+                                 <img className={styles.otherbrandLogo} src={`${process.env.PUBLIC_URL}/images/mystore_resized.webp`} alt="MyStore"  />
                               </a>
                            </div>
                       </div>

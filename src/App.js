@@ -12,12 +12,13 @@ const Header = React.lazy(() => import('./components/Home/Header'));
 function App() {
   return (
 
-       
+      /*  <Router>  */
       <Router basename="/meirafoods" > 
       <Suspense fallback={<div>Loading...</div>}>
           <Header />
           <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
+          {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />}/>
           <Route path="/product/:category" element={<Product />} />

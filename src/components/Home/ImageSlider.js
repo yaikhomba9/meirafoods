@@ -9,12 +9,12 @@ const ImageSlider =()=>{
 
 
       const Images = [
-        { id: "1", imgURL: `${process.env.PUBLIC_URL}/images/meira_text_img.png`, imgAlt: "Image 3",  context: "Image" },
-        { id: "2", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_10.jpg`, imgAlt: "Image 4",  context: "Image" },
-        { id: "3", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_11.jpg`, imgAlt: "Image 1", context: "Image" },
-        { id: "4", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_12.jpg`, imgAlt: "Image 2",  context: "Image" },
-        { id: "5", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_14.jpeg`, imgAlt: "Image 5",  context: "Image" },
-        { id: "6", imgURL: `${process.env.PUBLIC_URL}/images/meirafood_coverpage.png`, imgAlt: "Image 6",  context: "Image" }
+        { id: "1", imgURL: `${process.env.PUBLIC_URL}/images/meira_text_img.webp`, imgAlt: "Image 3",  context: "Image" },
+        { id: "2", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_10.webp`, imgAlt: "Image 4",  context: "Image" },
+        { id: "3", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_11.webp`, imgAlt: "Image 1", context: "Image" },
+        { id: "4", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_12.webp`, imgAlt: "Image 2",  context: "Image" },
+        { id: "5", imgURL: `${process.env.PUBLIC_URL}/images/meirafoods_img_14.webp`, imgAlt: "Image 5",  context: "Image" },
+        { id: "6", imgURL: `${process.env.PUBLIC_URL}/images/meirafood_coverpage.webp`, imgAlt: "Image 6",  context: "Image" }
     ];
 
 

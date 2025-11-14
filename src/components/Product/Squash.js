@@ -18,8 +18,8 @@ const Squash=()=>{
   const [selectedModule, setSelectedModule] = useState(null); 
 
      const modules = [
-    { name: 'PINEAPPLE SQUASH', description: 'Pineapple Squash', image : `${process.env.PUBLIC_URL}/images/lemon_squash.png`},
-    { name: 'LEMON SQUASH', description: 'Lemon Squash', image : `${process.env.PUBLIC_URL}/images/pineapple_squash.png`}
+    { name: 'PINEAPPLE SQUASH', description: 'Pineapple Squash', image : `${process.env.PUBLIC_URL}/images/lemon_squash.webp`},
+    { name: 'LEMON SQUASH', description: 'Lemon Squash', image : `${process.env.PUBLIC_URL}/images/pineapple_squash.webp`}
   ];
 
 

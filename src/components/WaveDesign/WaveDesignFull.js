@@ -11,7 +11,7 @@ const WaveDesignFull=({children})=>{
         <div className={styles.waveBg1}>
         {/* Layer 1 */}
         <svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         className={`${styles.wavea} ${styles.waveb}`}
         >
@@ -23,7 +23,7 @@ const WaveDesignFull=({children})=>{
 
         {/* Layer 2 */}
         <svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         className={`${styles.waveb} ${styles.wavec}`}
         >
@@ -36,7 +36,7 @@ const WaveDesignFull=({children})=>{
 
         {/* Layer 3 */}
         <svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         className={`${styles.wavea} ${styles.wavec}`}
         >

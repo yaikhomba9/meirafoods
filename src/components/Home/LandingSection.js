@@ -60,7 +60,7 @@ const LandingSection =()=>{
         <div className={`row justify-content-center ${style.imgDiv}`}>
           <div className={`col-4 ${style.image}`}>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/imgland1.png`}
+              src={`${process.env.PUBLIC_URL}/images/imgland1.webp`}
               alt="King Chilli Pickle"
               className={`${style.imgfluid} ${style.imgTiltLeft}`}
             />
@@ -68,7 +68,7 @@ const LandingSection =()=>{
 
           <div className={`col-4 ${style.image}`}>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/imgland2.png`}
+              src={`${process.env.PUBLIC_URL}/images/imgland2.webp`}
               alt="King Chilli Pickle"
               className={`${style.imgfluid} ${style.centerImage}`}
             />
@@ -76,7 +76,7 @@ const LandingSection =()=>{
 
           <div className={`col-4 ${style.image}`}>
             <img 
-              src={`${process.env.PUBLIC_URL}/images/imgland3.png`}
+              src={`${process.env.PUBLIC_URL}/images/imgland3.webp`}
               alt="King Chilli Pickle"
               className={`${style.imgfluid} ${style.imgTiltRight}`}
             />

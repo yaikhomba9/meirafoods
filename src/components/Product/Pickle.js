@@ -21,56 +21,56 @@ const Pickle=()=>{
     { 
       name: 'Umorok King Chilli Pickle | Authentic Manipur Ghost Pepper', 
       description: 'Ferociously hot yet aromatic King Chilli (Umorok) pickle from Manipur—crafted for true spice lovers. Add instant heat and depth to any meal.', 
-      image : `${process.env.PUBLIC_URL}/images/KingChilli_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/KingChilli_pickle.webp`
     },
     { name: 'Soibum Bamboo Shoot Pickle | Fermented & Crunchy', 
       description: 'Traditional fermented bamboo shoot pickle—tangy, crunchy, and culture-rich. A Northeastern staple for good reason.', 
-      image : `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Bambooshoot_pickle.webp`
     },
     { 
       name: 'Rohu Fish Pickle | Ginger-Garlic Manipuri Style', 
       description: 'Tender rohu in aromatic ginger-garlic pickle—balanced heat, big flavour, ready to serve with meals or snacks.', 
-      image : `${process.env.PUBLIC_URL}/images/Fish_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Fish_pickle.webp`
     },
     { 
       name: 'Garlic Pickle | Slow-Cooked, Aromatic, Balanced', 
       description: 'Smooth, full-bodied garlic pickle—flavourful and versatile. Serve with parathas, dal, or thalis.', 
-      image : `${process.env.PUBLIC_URL}/images/Garlic_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Garlic_pickle.webp`
     },
     { 
       name: 'Lemon Pickle | Tangy, Sun-Cured & Spiced', 
       description: 'Zesty lemon pickle—balanced sour, bitter, and spice notes in every spoonful.',  
-      image : `${process.env.PUBLIC_URL}/images/Lemon_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Lemon_pickle.webp`
     },
     { 
       name: 'Traditional Mango Pickle | Manipur Local Mangoes', 
       description: 'Handcrafted mango pickle with bold spices and the right sour-spicy balance.',  
-      image : `${process.env.PUBLIC_URL}/images/Mango_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Mango_pickle.webp`
     },
     { 
       name: 'Mixed Veg Pickle with Kachai Lemon | Crunchy & Zesty', 
       description: 'Exotic veggie medley lifted by Manipur’s GI-tagged Kachai Lemon—crunch, zing, and real Northeast character.',  
-      image : `${process.env.PUBLIC_URL}/images/Mix_veg_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Mix_veg_pickle.webp`
     },
     { 
       name: 'Ngari & King Chilli Pickle | Fermented Manipuri Classic', 
       description: 'Fermented ngari meets Manipur’s King chilli for an intensely savoury, authentic pickle—perfect with rice, lai saag, or snacks.',  
-      image : `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Ngari_kingchilli_pickle.webp`
     },
     { 
       name: 'Instant Ngari | Ready-to-Use Fermented Fish from Manipur', 
       description: 'Authentic Manipuri ngari—prepped and ready for everyday cooking. Big flavour, zero fuss.',  
-      image : `${process.env.PUBLIC_URL}/images/Ngari_pickle.png`
+      image : `${process.env.PUBLIC_URL}/images/Ngari_pickle.webp`
     },
     { 
        name: 'Hawaijar & Umorok Pickle | Vegan Fermented Soybean',
        description: 'Protein-rich fermented soy (hawaijar) with Manipur’s Umorok—pure umami heat, crafted in small batches.',  
-       image : `${process.env.PUBLIC_URL}/images/Soya_kingChilli_pickle.png`
+       image : `${process.env.PUBLIC_URL}/images/Soya_kingChilli_pickle.webp`
       },
     { 
        name: 'CHILLI KING PICKLE',
        description: 'Chilli King Pickle', 
-       image : `${process.env.PUBLIC_URL}/images/chilli_king_pickle.png`
+       image : `${process.env.PUBLIC_URL}/images/chilli_king_pickle.webp`
       },
   ];
 
@@ -117,7 +117,7 @@ const Pickle=()=>{
                                   <div className={styles.imageWrapper}>
                                     {!loadedImages[index] && (
                                       <img
-                                        src={`${process.env.PUBLIC_URL}/images/loader_img.png`}
+                                        src={`${process.env.PUBLIC_URL}/images/loader_img.webp`}
                                         alt="Loading..."
                                         className={styles.loaderOverlay}
                                       />

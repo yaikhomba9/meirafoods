@@ -114,7 +114,7 @@ const About =()=>{
 
                </div>
                <div className={`col-lg-6 col-md-12 col-sm-10 col-xs-12 d-flex justify-content-center ${styles.hiddenRight}`}>
-                    <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/about_img.png`} alt="Meira Foods Logo" />
+                    <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/about_img.webp`} alt="Meira Foods Logo" />
                </div>
                
                 
@@ -125,7 +125,7 @@ const About =()=>{
                 <div className={`card ${styles.propcard}`}>
                   <div className={`row  d-flex justify-content-center ${styles.rowpro}`}>
                     <div className={`col-lg-3 col-md-6 col-sm-8 col-xs-4 d-flex justify-content-center ${styles.proImag} ${styles.hidden} `}>  {/* "image-session" */}
-                        <img className={styles.meirapropieter} src={`${process.env.PUBLIC_URL}/images/cheTalu.jpg`} alt="Meira Foods Logo"/>
+                        <img className={styles.meirapropieter} src={`${process.env.PUBLIC_URL}/images/cheTalu.webp`} alt="Meira Foods Logo"/>
                     </div>
                     <div className={` col-lg-9 col-md-6 col-sm-8 col-xs-8 ${styles.propContext}`}>
                         <p  className={styles.txtCatgry}>"Meira Foods is a movement to create opportunities for every woman, providing them with a livelihood 

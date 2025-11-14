@@ -14,40 +14,40 @@ const Candy=()=>{
      { 
       name: 'Amla Candy | Vitamin-C Rich Sweet-Tart Bites', 
       description: 'Traditional amla candy—tangy, tasty, and naturally rich in vitamin C.', 
-      image : `${process.env.PUBLIC_URL}/images/amla_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/amla_candy.webp`
      },
     { 
       name: 'Ginger Candy | Zingy, Soothing, Digestive',
        description: 'Classic ginger candy—comforting heat and travel-friendly.', 
-       image : `${process.env.PUBLIC_URL}/images/ginger_candy.png` 
+       image : `${process.env.PUBLIC_URL}/images/ginger_candy.webp` 
       },
     { name: 'HEIBUM CANDY', 
       description: 'Heibum Candy', 
-      image : `${process.env.PUBLIC_URL}/images/heibum_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/heibum_candy.webp`
     },
     { name: 'Mango Candy | Chewy, Aromatic, King-of-Fruits', 
       description: 'Sun-bright mango candy—tropical sweetness in every bite.', 
-      image : `${process.env.PUBLIC_URL}/images/mango_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/mango_candy.webp`
      },
     { name: 'Indian Olive Candy | Tangy Jolphai/Heibong', 
       description: 'Zesty Indian olive candy—distinctive Northeast flavour with natural fruit goodness.',  
-      image : `${process.env.PUBLIC_URL}/images/oliv_candy.png` 
+      image : `${process.env.PUBLIC_URL}/images/oliv_candy.webp` 
     },
     { name: 'Pineapple Candy | Tropical & Juicy', 
       description: 'Real pineapple flavour with bromelain’s natural digestive support—crafted into chewy candy.',  
-      image : `${process.env.PUBLIC_URL}/images/pineape_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/pineape_candy.webp`
     },
     { name: 'Plum Candy | Juicy, Tangy, Antioxidant-Rich', 
       description: 'Sweet-tart plum candy with natural fruit goodness—a satisfying anytime nibble.',  
-      image : `${process.env.PUBLIC_URL}/images/plum_candy.png`
+      image : `${process.env.PUBLIC_URL}/images/plum_candy.webp`
     },
     { name: 'Tamarind Candy | Tangy, Nostalgic, Addictive',
        description: 'Sweet-sour tamarind candy—classic Indian flavour you’ll keep reaching for.',  
-       image : `${process.env.PUBLIC_URL}/images/tanmarind_candy.png`
+       image : `${process.env.PUBLIC_URL}/images/tanmarind_candy.webp`
       },
     { name: 'Wild Apple Candy | Sweet-Sour Hillside Treat', 
       description: 'Northeast wild apple candy—zesty flavour with natural fruit goodness.',  
-      image : `${process.env.PUBLIC_URL}/images/wildApple_candy.png` 
+      image : `${process.env.PUBLIC_URL}/images/wildApple_candy.webp` 
     },
     
   ];

@@ -27,7 +27,7 @@ const Teams =()=>{
                 <div className='row d-flex justify-content-center'>
                  <div className={`col-lg-6 col-md-3 col-sm-6 ${styles.teamProfile}`}>
                         <div className={styles.thumbnail}>
-                        <img className={styles.teamImage} src={`${process.env.PUBLIC_URL}/images/cheTalu.jpg`} alt='...' />
+                        <img className={styles.teamImage} src={`${process.env.PUBLIC_URL}/images/cheTalu.webp`} alt='...' />
                        {/*  <FontAwesomeIcon className={styles.teamImage} icon={faUserCircle}/> */}
                             <div className={styles.teamCaption}>
                                 <h4>Hanjabam Shubhra Devi</h4>
@@ -41,7 +41,7 @@ const Teams =()=>{
 
                     <div className={`col-lg-6 col-md-3 col-sm-6 ${styles.teamProfile}`}>
                         <div className={styles.thumbnail}>
-                             <img className={styles.teamImage} src={`${process.env.PUBLIC_URL}/images/akash_img.jpeg`} alt='...' /> 
+                             <img className={styles.teamImage} src={`${process.env.PUBLIC_URL}/images/akash_img.webp`} alt='...' /> 
                        {/*  <FontAwesomeIcon className={styles.teamImage} icon={faUserCircle}/> */}
                             <div className={styles.teamCaption}>
                                 <h4>Ch. Akash Sharma</h4>
@@ -56,7 +56,7 @@ const Teams =()=>{
 
                 <div className={`col-md-6 col-sm-6 ${styles.teamProfileall}`}>
                         <div className={styles.thumbnail}>
-                         <img className={styles.teamImageAll} src={`${process.env.PUBLIC_URL}/images/meira_teams_img.jpeg`} alt='...' /> 
+                         <img className={styles.teamImageAll} src={`${process.env.PUBLIC_URL}/images/meira_teams_img.webp`} alt='...' /> 
                           
                             <div className={styles.teamCaption}>
                                 <h4>Meira Team</h4>

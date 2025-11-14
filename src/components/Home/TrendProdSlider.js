@@ -22,7 +22,7 @@ const TrendProdCSlider=()=>{
    const cardData = [
     {
       id: 'product',
-      img: `${process.env.PUBLIC_URL}/images/imgland1.png`,
+      img: `${process.env.PUBLIC_URL}/images/imgland1.webp`,
       title: "Pickle",
       text: "Tender rohu in aromatic ginger-garlic pickle—balanced heat, big flavour, ready to serve with meals or snacks.",
       route: "/product/pickle", 
@@ -50,14 +50,14 @@ const TrendProdCSlider=()=>{
     }, */
     {
       id: 5,
-      img: `${process.env.PUBLIC_URL}/images/candyImg.png`,
+      img: `${process.env.PUBLIC_URL}/images/candyImg.webp`,
       title: "Candy",
       text: "Sweet-sour tamarind candy—classic Indian flavour you’ll keep reaching for.",
        route: "/product/candy",  
     },
     {
       id: 6,
-      img: `${process.env.PUBLIC_URL}/images/kiwi_img.png`,
+      img: `${process.env.PUBLIC_URL}/images/kiwi_img.webp`,
       title: "Jam",
       text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
       updated: "Last updated 20 mins ago",
@@ -65,7 +65,7 @@ const TrendProdCSlider=()=>{
     },
     {
       id: 7,
-      img: `${process.env.PUBLIC_URL}/images/Pinapple_cookies.png`,
+      img: `${process.env.PUBLIC_URL}/images/Pinapple_cookies.webp`,
       title: "Cookies",
       text: "Crisp outside, soft inside — our Pineapple Cookies blend buttery goodness with the sweet tropical flavor of ripe pineapples.",
       route: "/product/all" ,  

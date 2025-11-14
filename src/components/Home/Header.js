@@ -59,7 +59,7 @@ const Header =()=>{
          <nav className={`navbar navbar-expand-lg navbar-light bg-light shadow ${styles.navbarSticky} `}>
            <div className="container-fluid">
              <a className={`navbar-brand ${styles.navbar}`}  >
-               <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meira_foods_logo.png`} alt="Meira Foods Logo" />
+               <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meira_foods_logo.webp`} alt="Meira Foods Logo" />
             </a> 
             <button
             className={`navbar-toggler collapsed ${styles.hamburgerToggle} ${isHamburgerActive ? 'active' : ''}`}
@@ -91,17 +91,17 @@ const Header =()=>{
                     </span>
                     </li>
                     <li className={`nav-item ${styles.hdrItem}`}>
-                    <span className="nav-link active " onClick={(e) => {handleRoute('/home');  toggleHamburgerMenu();}}>
+                    <span className="nav-link active " onClick={(e) => {handleRoute('/');  toggleHamburgerMenu();}}>
                     <p className={styles.globalFont}><a href='#testimonial'><b>Testimonial</b></a></p>
                     </span>
                     </li>
                    <li className={`nav-item ${styles.hdrItemlogo}`}>
-                    <span className="nav-link active " onClick={(e) => {handleRoute('/home');  toggleHamburgerMenu();}}>
-                          <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meira_foods_logo.png`} alt="Meira Foods Logo" />
+                    <span className="nav-link active " onClick={(e) => {handleRoute('/');  toggleHamburgerMenu();}}>
+                          <img className={styles.meirafoodLogo} src={`${process.env.PUBLIC_URL}/images/meira_foods_logo.webp`} alt="Meira Foods Logo" />
                     </span>
                     </li>
                     <li className={`nav-item ${styles.hdrItem}`}>
-                    <span className="nav-link active " onClick={(e) => { handleRoute('/home'); toggleHamburgerMenu();}}>
+                    <span className="nav-link active " onClick={(e) => { handleRoute('/'); toggleHamburgerMenu();}}>
                     <p className={styles.globalFont}><a href='#teams'><b>Team</b></a></p>
                     </span>
                     </li> 
@@ -111,7 +111,7 @@ const Header =()=>{
                     </span>
                     </li>
                     <li className={`nav-item ${styles.hdrItem}`}>
-                    <span className="nav-link active " onClick={(e) => {handleRoute('/home'); toggleHamburgerMenu();}}>
+                    <span className="nav-link active " onClick={(e) => {handleRoute('/'); toggleHamburgerMenu();}}>
                     <p className={styles.globalFont}><a href='#contact'><b>Contact</b></a></p>
                     </span>
                     </li>
