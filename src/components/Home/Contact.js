@@ -33,8 +33,8 @@ const Contact=()=>{
                               <h6 class="text-uppercase mb-4 font-weight-bold"><b>Contact</b></h6>
                               <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faHome}/>  Brahmapur, Aribam Leikai, Harinath Road, near via, Moirangkhom Loklaobung, Thong, Imphal, Manipur 795001</p>
                               <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faEnvelope}/> ch.ak.sharma.meirafoods@gmail.com / meirafoods01@gmail.com</p>
-                              <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faPhone}/> +91 98634 13592</p>
-                              <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faWhatsapp}/> +91 98634 13592  / +91 98622 85324</p>
+                              {/* <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faPhone}/> +91 98634 13592</p>   +91 98634 13592  / */}
+                              <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faWhatsapp}/>+91 98622 85324</p>
                            </div>
                          </div>
 

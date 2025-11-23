@@ -7,7 +7,8 @@ import { faIdCard, faSignOut, faUser, faTimes, faGlobe, faRoad, faBridge, faTraf
   faDownload,
   faTimesCircle,
   faTimesSquare} from '@fortawesome/free-solid-svg-icons';
-  import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
+import { Title, Meta } from "react-head";
 
 
 
@@ -101,6 +102,13 @@ const Pickle=()=>{
 
 
         <>
+
+        <Title>Manipur Pickles & North East Achar, King Chilli, Fermented, Fish</Title>
+        <Meta  name="description" content="Looking for authentic Manipuri pickles? Explore Meira’s 
+        North East achar, fermented chilli, King Chilli, 
+        fish and soybean blends made with regional ingredients and time-tested methods." />
+        <h2  className={`${styles.candy}`}>Squash</h2>
+
            <div className={styles.prdPadding}>
               <div className={`container-fluid p-3 ${styles.prddiv}`}>
 

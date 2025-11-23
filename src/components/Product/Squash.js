@@ -8,6 +8,7 @@ import { faIdCard, faSignOut, faUser, faTimes, faGlobe, faRoad, faBridge, faTraf
   faTimesCircle,
   faTimesSquare} from '@fortawesome/free-solid-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
+import { Title, Meta } from "react-head";
 
 
 const Squash=()=>{
@@ -49,6 +50,12 @@ const Squash=()=>{
     return(
 
         <>
+
+          <Title>Refreshing Fruit Squash Crafted from Local Harvest and Naturally Processed Ingredients</Title>
+          <Meta  name="description" content="Looking for flavour-rich squash? Choose blends made from fresh seasonal 
+          fruits for reliable quality and purity in every sip. Refresh your taste today." />
+          <h2  className={`${styles.candy}`}>Squash</h2>
+
            <div className={styles.prdPadding}>
               <div className={`container-fluid p-3 ${styles.prddiv}`}>
                     <div className="row g-3">

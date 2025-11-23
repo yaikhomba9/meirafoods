@@ -74,6 +74,7 @@ const About =()=>{
 
         <>
        
+       
 
          <div className={`container-fluid ${styles.aboutmain}`}>
           <WaveBackground>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from '../css/Candy.module.css';
 import { Modal, Button } from 'react-bootstrap';
+import { Title, Meta } from "react-head";
 
 
 
@@ -82,6 +83,11 @@ const Candy=()=>{
 
 
         <>
+              <Title>Handcrafted Fruit Candies Created from Natural Regional Fruits and Pure Goodness</Title>
+              <Meta  name="description" content="Looking for authentic fruit candies? Enjoy naturally crafted treats made 
+                from regional fruits offering consistent taste. Try premium sweetness today." />
+               <h2  className={`${styles.candy}`}>Candy</h2>
+
            <div className={styles.prdPadding}>
               <div className={`container-fluid p-3 ${styles.prddiv}`}>
 

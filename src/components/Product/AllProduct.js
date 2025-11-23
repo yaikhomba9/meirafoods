@@ -3,7 +3,7 @@ import styles from '../css/Jam.module.css';
 import { Modal, Button } from 'react-bootstrap';
 import prodctDesc from '../Product/ProductDesc';
 
-
+import { Title, Meta } from "react-head";
 
 
 const Candy=()=>{
