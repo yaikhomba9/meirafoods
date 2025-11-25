@@ -23,14 +23,14 @@ const Contact=()=>{
                  <div className='row'>
                     <div className={`col-lg-6 col-md-6 col-sm-12 col-xs-12 ${styles.contactmp}`}>
                        <div className={`container ${styles.contactMap}`}>
-                        <iframe  className={`${styles.mapCon}`} src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d871.3603437263974!2d93.9445487695712!3d24.78799351616638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ3JzE2LjgiTiA5M8KwNTYnNDIuNyJF!5e1!3m2!1sen!2sin!4v1754821695345!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe  className={`${styles.mapCon}`} src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d871.3603437263974!2d93.9445487695712!3d24.78799351616638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ3JzE2LjgiTiA5M8KwNTYnNDIuNyJF!5e1!3m2!1sen!2sin!4v1754821695345!5m2!1sen!2sin"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                        </div>
                     </div>
                     <div className={`col-lg-6 col-md-12 col-sm-12 col-xs-12`}>
                        <div className={`container ${styles.contDetails} ${styles.animatedGradient}`}>
                          <div className={`${styles.innerDiv}`}>
-                          <div class="col-lg-12 col-md-12 col-sm-12 ">
-                              <h6 class="text-uppercase mb-4 font-weight-bold"><b>Contact</b></h6>
+                          <div className="col-lg-12 col-md-12 col-sm-12 ">
+                              <h6 className="text-uppercase mb-4 font-weight-bold"><b>Contact</b></h6>
                               <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faHome}/>  Brahmapur, Aribam Leikai, Harinath Road, near via, Moirangkhom Loklaobung, Thong, Imphal, Manipur 795001</p>
                               <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faEnvelope}/> ch.ak.sharma.meirafoods@gmail.com / meirafoods01@gmail.com</p>
                               {/* <p  className={styles.txtCatgry}><FontAwesomeIcon  icon={faPhone}/> +91 98634 13592</p>   +91 98634 13592  / */}
